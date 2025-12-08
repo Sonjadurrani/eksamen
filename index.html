@@ -3,20 +3,208 @@
 <head>
 	<meta charset="utf-8">
 	
-	<title>Eksamen</title>
+	<title>Connected Starters</title>
 	
 	<meta name="robots" content="All">
 	<meta name="author" content="Udgiver">
 	<meta name="copyright" content="Information om copyright">
 	
-	<link href="css/styles.css" rel="stylesheet" type="text/css">
-	
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
 
-<h1>Eksamen</h1>
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm fixed-top">
+  <div class="container">
+    <a class="navbar-brand logo" href="index.html">
+      <img src="images/logo1.svg" alt="Logo" width="auto" height="70" class="logo">
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav1">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav1">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div style="height: 100vh; background-image: url(images/hero.jpg); background-size: cover; background-position: center;" class="position-relative w-100">
+  <div class="position-absolute text-white d-flex flex-column align-items-start justify-content-center" style="top: 0; right: 0; bottom: 0; left: 0; background-color: rgba(0,0,0,.7);">
+    <div class="container">
+      <div class="col-12 col-md-8 col-lg-6">
+        <span style="color: #bbb;" class="text-uppercase">Et stærkt miljø for ambitiøse studerende</span>
+        <!-- on small screens remove display-4 -->
+        <h1 class="mb-4 mt-2  font-weight-bold">Fra vision til virkelighed.  <span style="color: #FFE54A;">Bliv iværksætter</span></h1>
+        <p  class="text-white">Connected Starters giver dig sparring, workshops og netværk, så du trygt kan udvikle dine idéer og bringe dem hele vejen fra tanke til virkelighed.</p>
+        <div class="mt-5">
+          <!-- hover background-color: white; color: black; -->
+          <a href="#" class="btn px-5 py-3 text-black mt-3 mt-sm-0 bg-secondary" style="border-radius: 30px;">Start din rejse</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="section services-section" id="services">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="section-title">
+          <h2>Hvad du får hos Connected Starters</h2>
+          <p>Uanset om du har en klar idé eller bare er nysgerrig, får du her et fællesskab, der hjælper dig med at udvikle dine projekter.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- FEATURE SECTION STARTER HER -->
+    <section class="features">
+      <div class="row g-4 align-items-stretch">
+
+        <!-- feature box -->
+        <div class="col-sm-6 col-lg-4">
+          <div class="feature-box-1 h-100">
+            <div class="icon">
+              <i class="fa-regular fa-lightbulb"></i>
+            </div>
+            <div class="feature-content">
+              <h5>Idéudvikling & Sparring</h5>
+              <p>Få sparring på dine idéer fra undervisere, eksperter og studerende. Vi hjælper dig med at udvikle og skærpe dit projekt.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- feature box -->
+        <div class="col-sm-6 col-lg-4">
+          <div class="feature-box-1 h-100">
+            <div class="icon">
+              <i class="fa-solid fa-users"></i>
+            </div>
+            <div class="feature-content">
+              <h5>Workshops & Events</h5>
+              <p>Deltag i praktiske workshops og inspirerende events, der giver dig nye værktøjer og konkret viden.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- feature box -->
+        <div class="col-sm-6 col-lg-4">
+          <div class="feature-box-1 h-100">
+            <div class="icon">
+              <i class="fa-solid fa-globe"></i>
+            </div>
+            <div class="feature-content">
+              <h5>Byg dit netværk</h5>
+              <p>Udvid dit netværk gennem samarbejde med studerende fra forskellige fagligheder og studieretninger.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- feature box -->
+        <div class="col-sm-6 col-lg-4">
+          <div class="feature-box-1 h-100">
+            <div class="icon">
+              <i class="fa-solid fa-briefcase"></i>
+            </div>
+            <div class="feature-content">
+              <h5>Adgang til virksomheder</h5>
+              <p>Få kontakt til virksomheder, hvor du kan teste idéer, få feedback og arbejde med virkelige problemstillinger.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- feature box -->
+        <div class="col-sm-6 col-lg-4">
+          <div class="feature-box-1 h-100">
+            <div class="icon">
+              <i class="fa-solid fa-gears"></i>
+            </div>
+            <div class="feature-content">
+              <h5>Kreative & digitale faciliteter</h5>
+              <p>I design and develop services for customers of all sizes, specializing in creating stylish, modern websites.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- feature box -->
+        <div class="col-sm-6 col-lg-4">
+          <div class="feature-box-1 h-100">
+            <div class="icon">
+              <i class="bi bi-rocket-takeoff"></i>
+            </div>
+            <div class="feature-content">
+              <h5>Støtte til din iværksætterrejse</h5>
+              <p>Få struktureret støtte, sparring og vejledning gennem hele processen fra idé til iværksætterrejse.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- FEATURE SLUT -->
+  </div>
+</section>
+
+
+<br>
+<br>
+
+<footer class="mt-auto">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 mb-3">
+        <h5>Om Os</h5>
+        <p>Connected Starters er Zealands iværksættermiljø for studerende på tværs af uddannelser. Vi skaber rammerne for idéudvikling, sparring, workshops og netværk – så du kan udvikle dine projekter og styrke din vej mod iværksætteri.</p>
+      </div>
+      <div class="col-md-4 mb-3">
+        <h5>Genveje</h5>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-decoration-none text-white">Home</a></li>
+          <li><a href="#" class="text-decoration-none text-white">Services</a></li>
+          <li><a href="#" class="text-decoration-none text-white">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4 mb-3">
+        <h5>Følg Os</h5>
+        <ul class="list-inline social-icons">
+          <li class="list-inline-item"><a href="#" class="text-white"><i class="bi bi-facebook"></i></a></li>
+          <li class="list-inline-item"><a href="#" class="text-white"><i class="bi bi-twitter"></i></a></li>
+          <li class="list-inline-item"><a href="#" class="text-white"><i class="bi bi-instagram"></i></a></li>
+        </ul>
+      </div>
+    </div>
+    <hr class="mb-4">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <p>&copy; 2025 Connected Starters. All rights reserved.</p>
+      </div>
+    </div>
+  </div>
+</footer>
 
 
 
