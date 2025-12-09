@@ -41,7 +41,7 @@ body{margin-top:20px;}
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 0%;
+  width: 0;
   height: 2px;
   background-color: #FFE54A;
   transition: width 0.3s ease;
@@ -49,6 +49,18 @@ body{margin-top:20px;}
 
 .navbar-nav .nav-link:hover::after {
   width: 100%;
+}
+
+
+.cta-btn {
+  transition: all 0.3s ease;
+}
+
+.cta-btn:hover {
+  background-color: #FFE54A !important; /* din gule farve */
+  color: black !important;
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
 
 /* Feature Box
@@ -78,7 +90,7 @@ body{margin-top:20px;}
   height: 70px;
   line-height: 70px;
   background: #FFE54A;
-  color: #ffffff;
+  color: #20247b;
   text-align: center;
   border-radius: 50%;
   margin-bottom: 22px;
@@ -126,6 +138,11 @@ body{margin-top:20px;}
   left: 0;
   right: auto;
 }
+
+
+
+
+
 .section {
   padding: 100px 0;
   position: relative;
@@ -143,6 +160,54 @@ body{margin-top:20px;}
 }
 
 
+
+
+
+/* Step cards */
+.step-card {
+  background-color: #ffffff;
+  padding: 24px 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.step-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 40px rgba(0,0,0,0.08);
+}
+
+/* Runde ikon-illustrationer */
+.step-illustration {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle at 30% 30%, #FFF5A5, #FFE54A);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.12);
+}
+
+.step-illustration i {
+  font-size: 30px;
+  color: #1B207A; /* din blå */
+}
+
+/* CTA-knap under sektionen (genbrug fra før) */
+.cta-btn-2 {
+  transition: all 0.3s ease;
+  background-color: #FFE54A;
+  color: #1B207A;
+  border: none;
+}
+
+.cta-btn-2:hover {
+  background-color: #1B207A;
+  color: #FFE54A;
+  transform: translateY(-3px) scale(1.03);
+
+}
 
 
 
