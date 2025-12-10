@@ -245,7 +245,7 @@ footer {
 
 
 body {
-  padding-top: 65px; /* navbar height */
+  padding-top: 70px; /* navbar height */
 }
 
 
@@ -253,3 +253,24 @@ body {
 .sonya{
   margin-bottom: 70px;
 }
+
+
+/* Luft omkring hver workshop */
+.workshop-item {
+margin-bottom: 60px;
+  margin-top: 60px;
+}
+
+
+
+
+.fullwidth-section {
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  width: 100vw;
+}
+
+
