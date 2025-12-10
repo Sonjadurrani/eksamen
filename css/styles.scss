@@ -1,7 +1,12 @@
+// =======================================
+// BOOTSTRAP & VARIABLE SETUP
+// Import functions and override Bootstrap defaults
+// =======================================
 // 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
 @import "../node_modules/bootstrap/scss/functions";
 
-// 2. Include any default variable overrides here
+// --- Global color variables for Branding ---
+// Primary = blå, Secondary = gul
 $link-decoration: none;
 $primary: #20247b;
 $secondary: #FFE54A;
@@ -10,20 +15,25 @@ $secondary: #FFE54A;
 @import "../node_modules/bootstrap/scss/variables";
 @import "../node_modules/bootstrap/scss/variables-dark";
 
-// 4. Include any default map overrides here
+// --- Custom color map example (used to extend Bootstrap color utilities) ---
 $custom-colors: (
 	"farve": $cyan-400,
 );
 
 $theme-colors: map-merge($theme-colors, $custom-colors);
 
+// Load the compiled Bootstrap components (mixins, grids, utilities)
 @import "bootstrapComponents";
 
 // 5. Du kan lave styling her...
 
 
+ // =======================================
+ // GLOBAL FONT SETTINGS
+ // =======================================
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
 
+// Standard font for hele websitet
 body {
   font-family: "Poppins", sans-serif !important;
 }
@@ -31,6 +41,9 @@ body {
 
 body{margin-top:20px;}
 
+// =======================================
+// NAVBAR HOVER UNDERLINE EFFECT
+// =======================================
 .navbar-nav .nav-link {
   position: relative;
   overflow: hidden;
@@ -52,6 +65,9 @@ body{margin-top:20px;}
 }
 
 
+// =======================================
+// CTA BUTTON HOVER ANIMATION (Hero)
+// =======================================
 .cta-btn {
   transition: all 0.3s ease;
 }
@@ -63,8 +79,11 @@ body{margin-top:20px;}
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* Feature Box
----------------------*/
+/* =======================================
+   FEATURE BOXES (Ikon + tekst bokse)
+   =======================================
+   Effekt: hover = blå baggrund, hvid tekst
+*/
 .feature-box-1 {
   padding: 32px;
   box-shadow: 0 0 30px rgba(31, 45, 61, 0.125);
@@ -73,16 +92,10 @@ body{margin-top:20px;}
   z-index: 1;
   border-radius: 10px;
   overflow: hidden;
-  -moz-transition: ease all 0.35s;
-  -o-transition: ease all 0.35s;
-  -webkit-transition: ease all 0.35s;
   transition: ease all 0.35s;
   top: 0;
 }
 .feature-box-1 * {
-  -moz-transition: ease all 0.35s;
-  -o-transition: ease all 0.35s;
-  -webkit-transition: ease all 0.35s;
   transition: ease all 0.35s;
 }
 .feature-box-1 .icon {
@@ -99,7 +112,7 @@ body{margin-top:20px;}
 .feature-box-1 .icon i {
   line-height: 70px;
 }
-.feature-box-1 h5 {
+.feature-box-1 h4 {
   color: #20247b;
   font-weight: 600;
 }
@@ -117,15 +130,12 @@ body{margin-top:20px;}
   width: 0;
   background: #20247b;
   z-index: -1;
-  -moz-transition: ease all 0.35s;
-  -o-transition: ease all 0.35s;
-  -webkit-transition: ease all 0.35s;
   transition: ease all 0.35s;
 }
 .feature-box-1:hover {
   top: -5px;
 }
-.feature-box-1:hover h5 {
+.feature-box-1:hover h4 {
   color: #ffffff;
 }
 .feature-box-1:hover p {
@@ -143,6 +153,9 @@ body{margin-top:20px;}
 
 
 
+// =======================================
+// SECTION GENERAL SPACING & TITLES
+// =======================================
 .section {
   padding: 100px 0;
   position: relative;
@@ -163,7 +176,9 @@ body{margin-top:20px;}
 
 
 
-/* Step cards */
+// =======================================
+// STEP CARDS (Sådan kommer du i gang)
+// =======================================
 .step-card {
   background-color: #ffffff;
   padding: 24px 20px;
@@ -176,7 +191,7 @@ body{margin-top:20px;}
   box-shadow: 0 14px 40px rgba(0,0,0,0.08);
 }
 
-/* Runde ikon-illustrationer */
+// Runde ikonbokse i step-sektionen
 .step-illustration {
   width: 70px;
   height: 70px;
@@ -194,7 +209,7 @@ body{margin-top:20px;}
   color: #1B207A; /* din blå */
 }
 
-/* CTA-knap under sektionen (genbrug fra før) */
+// Sekundær CTA-knap (gul → blå hover)
 .cta-btn-2 {
   transition: all 0.3s ease;
   background-color: #FFE54A;
@@ -212,14 +227,29 @@ body{margin-top:20px;}
 
 
 
+// =======================================
+// FOOTER STYLING
+// =======================================
 footer {
   background-color: #20247b;
   color: #fff;
   padding: 3rem 0;
 }
 
+// Sociale medier ikoner i footer
 .social-icons a {
   font-size: 1.25rem;
 }
 
 
+
+
+body {
+  padding-top: 65px; /* navbar height */
+}
+
+
+
+.sonya{
+  margin-bottom: 70px;
+}
