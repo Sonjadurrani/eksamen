@@ -57,7 +57,9 @@
         </li>
 
         <li class="nav-item">
-          <a class="nav-link fw-bold" href="tilmeld.html">Tilmeld dig</a>
+          <a href="tilmeld.html" class="btn btn-outline-primary-pill fw-semibold ms-lg-3">
+            Tilmeld dig
+          </a>
         </li>
 
 
@@ -73,7 +75,7 @@
 
 
 
-<div class="container mt-5 pt-5 mb-5">
+<div class="container mt-5 pt-5 mb-5 fade-in">
 
   <!-- Intro + Tilmelding -->
   <div class="row mb-5">
@@ -135,7 +137,7 @@
 
 
   <!-- 1:1 Samtale – FULL WIDTH -->
-  <section class="py-5 bg-primary text-white fullwidth-section">
+  <section class="py-5 bg-primary text-white fullwidth-section fade-in">
     <div class="container">
       <h4 class="fw-bold">Vil du hellere starte 1:1?</h4>
       <p class="mb-3">
@@ -160,7 +162,7 @@
 
 
   <!-- LOKATIONER: Viser de 3 campusmiljøer -->
-  <section class="py-5 bg-light text-primary ">
+  <section class="py-5 bg-light text-primary fade-in">
     <div class="container text-center">
       <h2 class="fw-bold mb-4">Vores lokationer</h2>
       <div class="row g-4">
@@ -191,13 +193,13 @@
 
       </div>
     </div>
+    <br>
+    <br>
+    <br>
+
   </section>
 
 
-
-<br>
-<br>
-<br>
 
 
 
@@ -245,5 +247,21 @@
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    const fadeElements = document.querySelectorAll('.fade-in');
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('show');
+                observer.unobserve(entry.target); // 👉 KUN fade-in én gang
+            }
+        });
+    }, {
+        threshold: 0.2
+    });
+
+    fadeElements.forEach(el => observer.observe(el));
+</script>
 </body>
 </html>

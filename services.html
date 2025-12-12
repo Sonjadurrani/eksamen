@@ -44,7 +44,7 @@
     <div class="collapse navbar-collapse" id="navbarNav1">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item">
-          <a class="nav-link " href="services.html">Services</a>
+          <a class="nav-link active" href="services.html">Services</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="workshop.html">Workshop & Events</a>
@@ -57,7 +57,9 @@
         </li>
 
         <li class="nav-item">
-          <a class="nav-link fw-bold" href="tilmeld.html">Tilmeld dig</a>
+          <a href="tilmeld.html" class="btn btn-outline-primary-pill fw-semibold ms-lg-3">
+            Tilmeld dig
+          </a>
         </li>
 
 
@@ -71,7 +73,7 @@
 
 
 
-<div class="container py-5">
+<div class="container py-5 fade-in">
   <div class="row g-4">
 
     <div class="section-title mb-4 mt-5">
@@ -171,7 +173,7 @@
 
 
 
-<section id="ideudvikling" class="py-5">
+<section id="ideudvikling" class="py-5 mx-2 fade-in">
   <div class="container">
     <div class="section-title fw-bold text-primary">
       <h3>Idéudvikling</h3>
@@ -198,7 +200,7 @@
   </div>
 </section>
 
-<section id="workshops" class="py-5 bg-light">
+<section id="workshops" class="py-5 bg-light mx-2 fade-in">
   <div class="container">
     <div class="section-title text-primary">
       <h3>Workshops & forløb</h3>
@@ -225,7 +227,7 @@
   </div>
 </section>
 
-<section id="sparring" class="py-5">
+<section id="sparring" class="py-5 mx-2 fade-in">
   <div class="container">
     <div class="section-title text-primary fw-bold">
       <h3>1:1 sparring</h3>
@@ -262,7 +264,7 @@
 
 
 <!-- LOKATIONER: Viser de 3 campusmiljøer -->
-<section class="py-5 bg-light text-primary ">
+<section class="py-5 bg-light text-primary fade-in">
   <div class="container text-center">
     <h2 class="fw-bold mb-4">Vores lokationer</h2>
     <div class="row g-4">
@@ -293,6 +295,10 @@
 
     </div>
   </div>
+  <br>
+  <br>
+  <br>
+
 </section>
 
 
@@ -346,5 +352,21 @@
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    const fadeElements = document.querySelectorAll('.fade-in');
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('show');
+                observer.unobserve(entry.target); // 👉 KUN fade-in én gang
+            }
+        });
+    }, {
+        threshold: 0.2
+    });
+
+    fadeElements.forEach(el => observer.observe(el));
+</script>
 </body>
 </html>

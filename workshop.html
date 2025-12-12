@@ -48,7 +48,7 @@
           <a class="nav-link " href="services.html">Services</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="workshop.html">Workshop & Events</a>
+          <a class="nav-link active" href="workshop.html">Workshop & Events</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="om.html">Om os</a>
@@ -58,7 +58,9 @@
         </li>
 
         <li class="nav-item">
-          <a class="nav-link fw-bold" href="tilmeld.html">Tilmeld dig</a>
+          <a href="tilmeld.html" class="btn btn-outline-primary-pill fw-semibold ms-lg-3">
+            Tilmeld dig
+          </a>
         </li>
 
 
@@ -73,12 +75,12 @@
 
 <div class="container mt-5">
 
-  <div class="section-title mb-4 mt-5">
+  <div class="section-title mb-4 mt-5 ">
     <h2 class="fw-bold text-primary">Workshops & Events</h2>
   </div>
 
   <!-- WORKSHOP 1 -->
-  <div class="row mb-5">
+  <div class="row mb-5 fade-in">
     <div class="col-md-5">
       <div class="ratio ratio-16x9 mb-3">
         <img src="images/work1.jpg" class="rounded object-fit-cover" alt="workshop 1">
@@ -101,6 +103,8 @@
   </div>
 
   <hr>
+  <br>
+  <br>
 
   <!-- WORKSHOP 2 -->
   <div class="row mb-5">
@@ -126,6 +130,8 @@
   </div>
 
   <hr>
+  <br>
+  <br>
 
   <!-- WORKSHOP 3 -->
   <div class="row mb-5">
@@ -151,6 +157,8 @@
   </div>
 
   <hr>
+  <br>
+  <br>
 
   <!-- WORKSHOP 4 -->
   <div class="row mb-5">
@@ -197,7 +205,7 @@
 <!-- KOMMENDE WORKSHOPS & EVENTS    -->
 <!-- =============================== -->
 
-<section class="py-5 bg-light">
+<section class="py-5 bg-light fade-in">
   <div class="container">
 
     <!-- Titel -->
@@ -268,7 +276,7 @@
 
 
 <!-- LOKATIONER: Viser de 3 campusmiljøer -->
-<section class="py-5 bg-light text-primary ">
+<section class="py-5 bg-light text-primary fade-in">
   <div class="container text-center">
     <h2 class="fw-bold mb-4">Vores lokationer</h2>
     <div class="row g-4">
@@ -299,6 +307,10 @@
 
     </div>
   </div>
+  <br>
+  <br>
+  <br>
+
 </section>
 
 
@@ -352,5 +364,21 @@
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    const fadeElements = document.querySelectorAll('.fade-in');
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('show');
+                observer.unobserve(entry.target); // 👉 KUN fade-in én gang
+            }
+        });
+    }, {
+        threshold: 0.2
+    });
+
+    fadeElements.forEach(el => observer.observe(el));
+</script>
 </body>
 </html>

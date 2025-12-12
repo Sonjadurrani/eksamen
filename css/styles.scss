@@ -374,7 +374,7 @@ section[id] {
 .icon-wrapper {
   width: 70px;
   height: 70px;
-  background: #FFE54A;      /* gul baggrund */
+  background: #ffffff;      /* gul baggrund */
   color: #20247b;           /* primary blå ikon */
   border-radius: 50%;
   display: flex;
@@ -384,3 +384,49 @@ section[id] {
   font-size: 27px;
 }
 
+/* Outline pill button – navbar */
+.btn-outline-primary-pill {
+  color: #20247b;               /* primary */
+  border: 2px solid #20247b;
+  background-color: transparent;
+  border-radius: 999px;
+  padding: 8px 24px;
+  font-weight: 600;
+  transition: all 0.25s ease;
+}
+
+/* Navbar CTA – samme størrelse som nav-links */
+.btn-outline-primary-pill {
+  color: #20247b;
+  border: 2px solid #20247b;
+  background-color: transparent;
+  border-radius: 999px;
+
+  /* 🔽 DET VIGTIGE */
+  font-size: 0.9rem;          /* samme som .nav-link */
+  padding: 5px 16px;        /* mindre højde */
+  line-height: 1.6;
+
+  transition: all 0.25s ease;
+}
+
+.btn-outline-primary-pill:hover {
+  background-color: #20247b;
+  color: #fff;
+}
+
+
+
+
+
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+}
+
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}
