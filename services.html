@@ -7,9 +7,10 @@
 
   <title>Services</title>
 
-  <meta name="robots" content="All">
-  <meta name="author" content="Udgiver">
-  <meta name="copyright" content="Information om copyright">
+  <meta name="description" content="Se hvilke services Connected Starters tilbyder studerende: idéudvikling, workshops og 1:1 sparring i trygge rammer – uanset hvor langt du er.">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Sonja Durrani">
+  <meta name="copyright" content="© 2025 Sonja Durrani – Connected Starters">
 
   <!-- Link til eget stylesheet -->
   <link href="css/styles.css" rel="stylesheet" type="text/css">
@@ -73,11 +74,11 @@
 
 
 
-<div class="container py-5 fade-in">
+<div class="container py-5">
   <div class="row g-4">
 
     <div class="section-title mb-4 mt-4">
-      <h2 class="fw-bold text-primary">Services</h2>
+      <h1 class="fw-bold text-primary">Services</h1>
     </div>
 
     <!-- Service 1 -->
@@ -88,7 +89,7 @@
             <div class="icon-wrapper">
               <i class="fa-solid fa-lightbulb fa-2x"></i>
             </div>
-            <h3 class="h4 mb-2">Idéudvikling</h3>
+            <h3 class="h4 mb-2 fw-semibold">Idéudvikling</h3>
             <p class="text-center mb-0">
               Få hjælp til at forme og udvikle dine idéer
             </p>
@@ -116,7 +117,7 @@
             <div class="icon-wrapper">
               <i class="fa-solid fa-people-group fa-2x"></i>
             </div>
-            <h3 class="h4 mb-2">Workshops</h3>
+            <h3 class="h4 mb-2 fw-semibold">Workshops</h3>
             <p class="text-center mb-0">
               Praktiske forløb med andre studerende
             </p>
@@ -144,7 +145,7 @@
             <div class="icon-wrapper">
               <i class="fa-solid fa-comments fa-2x"></i>
             </div>
-            <h3 class="h4 mb-2">1:1 sparring</h3>
+            <h3 class="h4 mb-2 fw-semibold">1:1 sparring</h3>
             <p class="text-center mb-0">
               Personlig sparring i trygge rammer
             </p>
@@ -175,9 +176,13 @@
 
 <section id="ideudvikling" class="py-5 mx-2 fade-in">
   <div class="container">
-    <div class="section-title fw-bold text-primary">
+
+    <div class="section-title fw-bold text-primary text-center">
       <h3>Idéudvikling</h3>
     </div>
+
+    <div class="row">
+      <div class="col-12 col-md-10 col-lg-8 mx-auto">
 
     <p>
       Idéudvikling hos Connected Starters handler om at give dine tanker form og retning –
@@ -197,14 +202,23 @@
       Det vigtigste er ikke at have det rigtige svar – men at turde udforske dine muligheder
       og tage de første skridt i dit eget tempo.
     </p>
+
+      </div>
+    </div>
+
   </div>
 </section>
 
 <section id="workshops" class="py-5 bg-light mx-2 fade-in">
   <div class="container">
-    <div class="section-title text-primary">
+
+    <div class="section-title text-primary text-center">
       <h3>Workshops & forløb</h3>
     </div>
+
+    <div class="row">
+      <div class="col-12 col-md-10 col-lg-8 mx-auto">
+
 
     <p>
       Connected Starters tilbyder workshops og forløb, der giver dig konkrete værktøjer
@@ -224,14 +238,21 @@
       af din idé. Du vælger selv, hvilke forløb der passer til dit niveau og dine behov,
       og der er ingen forventning om, at du deltager i alt.
     </p>
+      </div>
+    </div>
+
   </div>
 </section>
 
 <section id="sparring" class="py-5 mx-2 fade-in">
   <div class="container">
-    <div class="section-title text-primary fw-bold">
+
+    <div class="section-title text-primary fw-bold text-center">
       <h3>1:1 sparring</h3>
     </div>
+
+    <div class="row">
+      <div class="col-12 col-md-10 col-lg-8 mx-auto">
 
     <p>
       1:1 sparring er for dig, der foretrækker personlig dialog og et mere roligt format.
@@ -250,12 +271,17 @@
       til iværksætteri, eller som har brug for afklaring, før de deltager i fælles aktiviteter.
       Det er en fleksibel måde at komme i gang – på dine egne præmisser.
     </p>
+      </div>
+    </div>
+
   </div>
 </section>
 
 
 
-
+<br>
+<br>
+<br>
 
 
 
@@ -331,11 +357,23 @@
       <!-- Sociale medier sektion -->
       <div class="col-md-3 mb-3">
         <h5>Følg os</h5>
+
         <ul class="list-inline social-icons">
-          <li class="list-inline-item"><a href="#" class="text-white"><i class="bi bi-facebook"></i></a></li>
-          <li class="list-inline-item"><a href="#" class="text-white"><i class="bi bi-twitter"></i></a></li>
-          <li class="list-inline-item"><a href="#" class="text-white"><i class="bi bi-instagram"></i></a></li>
+          <li class="list-inline-item">
+            <a href="https://www.facebook.com/" class="text-white">
+              <i class="bi bi-facebook"></i>
+            </a>
+          </li>
+
+          <li class="list-inline-item">
+            <a href="https://www.instagram.com/" class="text-white">
+              <i class="bi bi-instagram"></i>
+            </a>
+          </li>
         </ul>
+
+        <!-- Logo SKAL ligge udenfor ul -->
+        <img src="images/Zealandlogo.svg" alt="Zealand logo" class="logo w-50 mt-4">
       </div>
     </div>
 
@@ -352,14 +390,23 @@
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
 <script>
     const fadeElements = document.querySelectorAll('.fade-in');
 
+    // 👉 Fade første element ind automatisk (fx hero)
+    if (fadeElements.length > 0) {
+        setTimeout(() => {
+            fadeElements[0].classList.add('show');
+        }, 500);
+    }
+
+    // 👉 Observer til resten (scroll fade-in)
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('show');
-                observer.unobserve(entry.target); // 👉 KUN fade-in én gang
+                observer.unobserve(entry.target); // fade-in kun én gang
             }
         });
     }, {

@@ -7,9 +7,10 @@
 
   <title>Kontakt</title>
 
-  <meta name="robots" content="All">
-  <meta name="author" content="Udgiver">
-  <meta name="copyright" content="Information om copyright">
+  <meta name="description" content="Kontakt Connected Starters og få svar på dine spørgsmål om iværksætteri, workshops eller 1:1-sparring for studerende på Zealand.">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Sonja Durrani">
+  <meta name="copyright" content="© 2025 Sonja Durrani – Connected Starters">
 
   <!-- Link til eget stylesheet -->
   <link href="css/styles.css" rel="stylesheet" type="text/css">
@@ -83,7 +84,7 @@
 
   <!-- Section title -->
   <div class="section-title mb-4 mt-5">
-    <h2 class="fw-bold text-primary">Kontakt os</h2>
+    <h1 class="fw-bold text-primary">Kontakt os</h1>
   </div>
 
   <div class="row g-4">
@@ -150,42 +151,44 @@
     </div>
 
   </div>
+
+
   <!-- Horizontal Contact Info -->
-  <div class="row text-center mt-5">
+  <div class="row text-center mt-5 contact-info">
     <div class="col-md-3 col-6">
       <i class="bi bi-telephone-fill fs-4 text-primary"></i>
-      <p class="mb-0">+45 25 93 33 33</p>
+      <p class="mb-0"><a href="tel:+4525933333">+45 25 93 33 33</a></p>
     </div>
     <div class="col-md-3 col-6">
       <i class="bi bi-envelope-fill fs-4 text-primary"></i>
-      <p class="mb-0">Connected@starters.dk</p>
+      <p class="mb-0"><a href="mailto:Connected@starters.dk">Connected@starters.dk</a></p>
     </div>
     <div class="col-md-3 col-6">
       <i class="bi bi-instagram fs-4 text-primary"></i>
-      <p class="mb-0">@Connectedstarters</p>
+      <p class="mb-0"><a href="https://www.instagram.com/"> @Connectedstarters </a></p>
     </div>
     <div class="col-md-3 col-6">
       <i class="bi bi-facebook fs-4 text-primary"></i>
-      <p class="mb-0">Connected Starters</p>
+      <p class="mb-0"><a href="https://www.facebook.com/"> Connected Starters </a></p>
     </div>
   </div>
 </section>
 <br>
 
 
-  <!-- 1:1 Samtale – FULL WIDTH -->
-  <section class="py-5 bg-primary text-white mt-5 mb-5 fullwidth-section fade-in">
-    <div class="container">
-      <h4 class="fw-bold">Vil du hellere starte 1:1?</h4>
-      <p class="mb-3">
-        Ikke alle føler sig klar til at deltage i workshops eller events med det samme.
-        Du kan starte i dit eget tempo – book en fortrolig online samtale, hvor du kan præsentere din idé og få personlig sparring.
-      </p>
-      <a href="#" class="btn cta-btn px-5 py-3 text-black mt-3 mt-sm-0 bg-secondary rounded-pill fw-semibold">
-        Book en Zoom-samtale
-      </a>
-    </div>
-  </section>
+<!-- 1:1 SECTION – KORREKT -->
+<section class="py-5 mt-4 bg-primary text-white fade-in">
+  <div class="container">
+    <h4 class="fw-bold">Vil du hellere starte 1:1?</h4>
+    <p class="mb-3">
+      Ikke alle føler sig klar til workshops med det samme.
+      Book en fortrolig online samtale og få personlig sparring.
+    </p>
+    <a href="#" class="btn bg-secondary text-black rounded-pill px-5 py-3 fw-semibold">
+      Book en Zoom-samtale
+    </a>
+  </div>
+</section>
 
 
 
@@ -276,11 +279,23 @@
       <!-- Sociale medier sektion -->
       <div class="col-md-3 mb-3">
         <h5>Følg os</h5>
+
         <ul class="list-inline social-icons">
-          <li class="list-inline-item"><a href="#" class="text-white"><i class="bi bi-facebook"></i></a></li>
-          <li class="list-inline-item"><a href="#" class="text-white"><i class="bi bi-twitter"></i></a></li>
-          <li class="list-inline-item"><a href="#" class="text-white"><i class="bi bi-instagram"></i></a></li>
+          <li class="list-inline-item">
+            <a href="https://www.facebook.com/" class="text-white">
+              <i class="bi bi-facebook"></i>
+            </a>
+          </li>
+
+          <li class="list-inline-item">
+            <a href="https://www.instagram.com/" class="text-white">
+              <i class="bi bi-instagram"></i>
+            </a>
+          </li>
         </ul>
+
+        <!-- Logo SKAL ligge udenfor ul -->
+        <img src="images/Zealandlogo.svg" alt="Zealand logo" class="logo w-50 mt-4">
       </div>
     </div>
 
@@ -297,29 +312,23 @@
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
 <script>
     const fadeElements = document.querySelectorAll('.fade-in');
 
+    // 👉 Fade første element ind automatisk (fx hero)
+    if (fadeElements.length > 0) {
+        setTimeout(() => {
+            fadeElements[0].classList.add('show');
+        }, 500);
+    }
+
+    // 👉 Observer til resten (scroll fade-in)
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('show');
-                observer.unobserve(entry.target); // 👉 KUN fade-in én gang
-            }
-        });
-    }, {
-        threshold: 0.2
-    });
-
-    fadeElements.forEach(el => observer.observe(el));
-</script><script>
-    const fadeElements = document.querySelectorAll('.fade-in');
-
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('show');
-                observer.unobserve(entry.target); // 👉 KUN fade-in én gang
+                observer.unobserve(entry.target); // fade-in kun én gang
             }
         });
     }, {

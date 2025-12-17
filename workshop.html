@@ -7,9 +7,10 @@
 
   <title>Workshop & Events</title>
 
-  <meta name="robots" content="All">
-  <meta name="author" content="Udgiver">
-  <meta name="copyright" content="Information om copyright">
+  <meta name="description" content="Deltag i workshops og events hos Connected Starters, hvor studerende får viden, sparring og konkrete værktøjer til idéudvikling og iværksætteri.">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Sonja Durrani">
+  <meta name="copyright" content="© 2025 Sonja Durrani – Connected Starters">
 
   <!-- Link til eget stylesheet -->
   <link href="css/styles.css" rel="stylesheet" type="text/css">
@@ -76,14 +77,14 @@
 <div class="container mt-5 fade-in">
 
   <div class="section-title mb-4 mt-5 ">
-    <h2 class="fw-bold text-primary">Workshops & Events</h2>
+    <h1 class="fw-bold text-primary">Workshops & Events</h1>
   </div>
 
   <!-- WORKSHOP 1 -->
   <div class="row mb-5 ">
     <div class="col-md-5">
       <div class="ratio ratio-16x9 mb-3">
-        <img src="images/work1.jpg" class="rounded object-fit-cover" alt="workshop 1">
+        <img src="images/1.webp" class="rounded object-fit-cover" alt="workshop 1">
       </div>
     </div>
 
@@ -110,7 +111,7 @@
   <div class="row mb-5">
     <div class="col-md-5">
       <div class="ratio ratio-16x9 mb-3">
-        <img src="images/work2.jpg" class="rounded object-fit-cover" alt="workshop 2">
+        <img src="images/work2.webp" class="rounded object-fit-cover" alt="workshop 2">
       </div>
     </div>
 
@@ -137,7 +138,7 @@
   <div class="row mb-5">
     <div class="col-md-5">
       <div class="ratio ratio-16x9 mb-3">
-        <img src="images/work3.jpg" class="rounded object-fit-cover" alt="workshop 3">
+        <img src="images/work3.webp" class="rounded object-fit-cover" alt="workshop 3">
       </div>
     </div>
 
@@ -164,7 +165,7 @@
   <div class="row mb-5">
     <div class="col-md-5">
       <div class="ratio ratio-16x9 mb-3">
-        <img src="images/work4.jpg" class="rounded object-fit-cover" alt="">
+        <img src="images/work4.webp" class="rounded object-fit-cover" alt="">
       </div>
     </div>
 
@@ -319,7 +320,6 @@
 
 
 
-
 <!-- FOOTER: 3 kolonner med info, genveje og sociale medier -->
 <footer class="mt-auto">
   <div class="container">
@@ -343,11 +343,23 @@
       <!-- Sociale medier sektion -->
       <div class="col-md-3 mb-3">
         <h5>Følg os</h5>
+
         <ul class="list-inline social-icons">
-          <li class="list-inline-item"><a href="#" class="text-white"><i class="bi bi-facebook"></i></a></li>
-          <li class="list-inline-item"><a href="#" class="text-white"><i class="bi bi-twitter"></i></a></li>
-          <li class="list-inline-item"><a href="#" class="text-white"><i class="bi bi-instagram"></i></a></li>
+          <li class="list-inline-item">
+            <a href="https://www.facebook.com/" class="text-white">
+              <i class="bi bi-facebook"></i>
+            </a>
+          </li>
+
+          <li class="list-inline-item">
+            <a href="https://www.instagram.com/" class="text-white">
+              <i class="bi bi-instagram"></i>
+            </a>
+          </li>
         </ul>
+
+        <!-- Logo SKAL ligge udenfor ul -->
+        <img src="images/Zealandlogo.svg" alt="Zealand logo" class="logo w-50 mt-4">
       </div>
     </div>
 
@@ -364,14 +376,23 @@
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
 <script>
     const fadeElements = document.querySelectorAll('.fade-in');
 
+    // 👉 Fade første element ind automatisk (fx hero)
+    if (fadeElements.length > 0) {
+        setTimeout(() => {
+            fadeElements[0].classList.add('show');
+        }, 500);
+    }
+
+    // 👉 Observer til resten (scroll fade-in)
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('show');
-                observer.unobserve(entry.target); // 👉 KUN fade-in én gang
+                observer.unobserve(entry.target); // fade-in kun én gang
             }
         });
     }, {
@@ -382,3 +403,4 @@
 </script>
 </body>
 </html>
+

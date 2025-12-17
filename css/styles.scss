@@ -175,6 +175,16 @@ body{margin-top:20px;}
 
 
 
+.section-title h1 {
+
+  font-weight: 700;
+  color: #20247b;
+  font-size: 45px;
+  margin: 0 0 15px;
+  border-left: 5px solid #FFE54A;
+  padding-left: 15px;
+}
+
 
 
 
@@ -265,14 +275,7 @@ margin-bottom: 60px;
   margin-top: 60px;
 }
 
-.fullwidth-section {
-  position: relative;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
-  width: 100vw;
-}
+
 
 .dark-image {
   filter: brightness(70%);
@@ -417,9 +420,6 @@ section[id] {
 
 
 
-
-
-
 .fade-in {
   opacity: 0;
   transform: translateY(24px);
@@ -429,4 +429,17 @@ section[id] {
 .fade-in.show {
   opacity: 1;
   transform: translateY(0);
+}
+
+.contact-info p {
+  overflow-wrap: break-word;
+}
+html, body {
+  overflow-x: hidden;
+}
+
+.footer-logo {
+  max-width: 120px;   /* justér størrelsen */
+  margin-top: 20px;   /* luft foroven */
+  display: block;     /* så margin-top virker korrekt */
 }
