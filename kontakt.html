@@ -26,289 +26,289 @@
   <!-- Bootstrap Icons --> <!-- Kommentar: ikon-bibliotek -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"> <!-- Bootstrap Icons link -->
 
-  <!-- Font Awesome (gammel version - anbefalet at fjerne hvis ikke brugt) --> <!-- Kommentar -->
+  <!-- Font Awesome (gammel version - anbefalet at fjerne hvis ikke brugt) -->
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet"> <!-- Font Awesome v4 -->
 
-  <!-- Font Awesome 6.5 (ikonpakke der bruges på siden) --> <!-- Kommentar -->
+  <!-- Font Awesome 6.5 (ikonpakke der bruges på siden) -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"> <!-- Font Awesome v6 -->
 
   <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Gør siden responsiv på mobil -->
 </head> <!-- Head slutter -->
 
-<body> <!-- Body starter (alt synligt indhold) -->
+<body> 
 
-<!-- NAVIGATIONSBAR: Topmenu med logo og links --> <!-- Kommentar: navbar -->
+<!-- NAVIGATIONSBAR: Topmenu med logo og links --> 
 <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm fixed-top"> <!-- Bootstrap navbar: lys + shadow + fixed top -->
-  <div class="container"> <!-- Holder navbar indhold indenfor max bredde -->
+  <div class="container"> 
 
-    <!-- Logo til venstre i navbar --> <!-- Kommentar -->
+    <!-- Logo til venstre i navbar -->
     <a class="navbar-brand logo" href="index.html"> <!-- Logo som link til forsiden -->
       <img src="images/logo1.svg" alt="Logo" width="auto" height="70" class="logo"> <!-- Selve logo-billedet -->
     </a> <!-- Slutter logo-link -->
 
-    <!-- Mobil-menu knap (hamburger ikon) --> <!-- Kommentar -->
+    <!-- Mobil-menu knap (hamburger ikon) -->
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav1"> <!-- Burger knap -->
       <span class="navbar-toggler-icon"></span> <!-- Burger ikon -->
-    </button> <!-- Slutter burger knap -->
+    </button> 
 
-    <!-- Navigation links til højre --> <!-- Kommentar -->
+    <!-- Navigation links til højre -->
     <div class="collapse navbar-collapse" id="navbarNav1"> <!-- Collapsable menu på mobil -->
       <ul class="navbar-nav ms-auto"> <!-- Menu liste, ms-auto skubber til højre -->
 
-        <li class="nav-item"> <!-- Menupunkt -->
-          <a class="nav-link " href="services.html">Services</a> <!-- Link til services -->
-        </li> <!-- Slutter menupunkt -->
+        <li class="nav-item"> 
+          <a class="nav-link " href="services.html">Services</a> 
+        </li> 
 
-        <li class="nav-item"> <!-- Menupunkt -->
-          <a class="nav-link" href="workshop.html">Workshop & Events</a> <!-- Link til workshop -->
-        </li> <!-- Slutter menupunkt -->
+        <li class="nav-item"> 
+          <a class="nav-link" href="workshop.html">Workshop & Events</a> 
+        </li> 
 
-        <li class="nav-item"> <!-- Menupunkt -->
-          <a class="nav-link" href="om.html">Om os</a> <!-- Link til om os -->
-        </li> <!-- Slutter menupunkt -->
+        <li class="nav-item"> 
+          <a class="nav-link" href="om.html">Om os</a> 
+        </li> 
 
-        <li class="nav-item"> <!-- Menupunkt -->
+        <li class="nav-item"> 
           <a class="nav-link active" href="kontakt.html">Kontakt</a> <!-- Active = nuværende side -->
-        </li> <!-- Slutter menupunkt -->
+        </li> 
 
-        <li class="nav-item"> <!-- Menupunkt til CTA -->
-          <a href="tilmeld.html" class="btn btn-outline-primary-pill fw-semibold ms-lg-3"> <!-- CTA-knap -->
-            Tilmeld dig <!-- Tekst i knappen -->
-          </a> <!-- Slutter CTA-knap -->
-        </li> <!-- Slutter menupunkt -->
+        <li class="nav-item"> 
+          <a href="tilmeld.html" class="btn btn-outline-primary-pill fw-semibold ms-lg-3"> 
+            Tilmeld dig 
+          </a> 
+        </li> 
 
-      </ul> <!-- Slutter liste -->
-    </div> <!-- Slutter collapse -->
-  </div> <!-- Slutter container -->
-</nav> <!-- Slutter navbar -->
+      </ul> 
+    </div> 
+  </div> 
+</nav> 
 
-<!-- CONTACT SECTION --> <!-- Kommentar: kontakt-sektion -->
-<section class="container fade-in" id="contact"> <!-- Container med fade-in og id til ankerlink -->
+<!-- CONTACT SECTION --> 
+<section class="container fade-in" id="contact"> 
 
-  <!-- Section title --> <!-- Kommentar -->
-  <div class="section-title mb-4 mt-5"> <!-- Titelblok med margin-top og margin-bottom -->
-    <h1 class="fw-bold text-primary">Kontakt os</h1> <!-- Overskrift, fed og blå -->
-  </div> <!-- Slutter titelblok -->
+ 
+  <div class="section-title mb-4 mt-5"> 
+    <h1 class="fw-bold text-primary">Kontakt os</h1> 
+  </div> 
 
-  <div class="row g-4"> <!-- Grid række med gap mellem kolonner -->
+  <div class="row g-4"> 
 
-    <!-- FORM (Venstre kolonne) --> <!-- Kommentar -->
-    <div class="col-lg-6"> <!-- Halv bredde på large skærme -->
+    <!-- FORM (Venstre kolonne) -->
+    <div class="col-lg-6"> 
       <div class="p-4 bg-light rounded shadow-sm h-100"> <!-- Kort: padding, lys baggrund, runde hjørner, skygge, fuld højde -->
-        <form> <!-- Starter formular -->
+        <form> 
 
-          <div class="mb-3"> <!-- Formgruppe med margin-bottom -->
-            <label for="name" class="form-label">Navn</label> <!-- Label til input -->
-            <input type="text" class="form-control" id="name" placeholder="Dit fulde navn"> <!-- Tekstfelt -->
+          <div class="mb-3"> 
+            <label for="name" class="form-label">Navn</label> 
+            <input type="text" class="form-control" id="name" placeholder="Dit fulde navn"> 
+          </div> 
+
+          <div class="mb-3"> 
+            <label for="email" class="form-label">E-mail</label> 
+            <input type="email" class="form-control" id="email" placeholder="din@email.dk"> 
           </div> <!-- Slutter formgruppe -->
 
-          <div class="mb-3"> <!-- Formgruppe -->
-            <label for="email" class="form-label">E-mail</label> <!-- Label -->
-            <input type="email" class="form-control" id="email" placeholder="din@email.dk"> <!-- Email input -->
+          <div class="mb-4"> 
+            <label for="message" class="form-label">Hvad vil du gerne have hjælp til?</label> 
+            <textarea class="form-control" id="message" rows="4" placeholder="Skriv her..."></textarea> 
           </div> <!-- Slutter formgruppe -->
 
-          <div class="mb-4"> <!-- Formgruppe -->
-            <label for="message" class="form-label">Hvad vil du gerne have hjælp til?</label> <!-- Label -->
-            <textarea class="form-control" id="message" rows="4" placeholder="Skriv her..."></textarea> <!-- Tekstområde -->
-          </div> <!-- Slutter formgruppe -->
+          <button type="submit" class="btn btn-primary rounded-pill px-4 py-2 w-100"> 
+            Send besked 
+          </button> 
 
-          <button type="submit" class="btn btn-primary rounded-pill px-4 py-2 w-100"> <!-- Submit knap, rund, fuld bredde -->
-            Send besked <!-- Tekst i knappen -->
-          </button> <!-- Slutter knap -->
+        </form> 
+      </div> 
+    </div>
 
-        </form> <!-- Slutter formular -->
-      </div> <!-- Slutter kort -->
-    </div> <!-- Slutter venstre kolonne -->
+    <!-- TRYGHED / FORKLARING (Højre kolonne) -->
+    <div class="col-lg-6"> 
+      <div class="p-4 bg-light rounded shadow-sm h-100"> 
 
-    <!-- TRYGHED / FORKLARING (Højre kolonne) --> <!-- Kommentar -->
-    <div class="col-lg-6"> <!-- Halv bredde på large skærme -->
-      <div class="p-4 bg-light rounded shadow-sm h-100"> <!-- Kort med samme styling som venstre -->
+        <h4 class="fw-bold text-primary mb-3"> 
+          Hvad kan vi hjælpe dig med? 
+        </h4> 
 
-        <h4 class="fw-bold text-primary mb-3"> <!-- Overskrift til højre kort -->
-          Hvad kan vi hjælpe dig med? <!-- Tekst -->
-        </h4> <!-- Slutter overskrift -->
+        <ul class="list-unstyled mt-4"> 
 
-        <ul class="list-unstyled mt-4"> <!-- Liste uden bullets + top margin -->
+          <li class="mb-3">
+            <strong>• Er du i tvivl om, hvor du skal starte?</strong><br> 
+            Vi hjælper dig med at finde retning og næste skridt. 
+          </li> 
 
-          <li class="mb-3"> <!-- Listepunkt -->
-            <strong>• Er du i tvivl om, hvor du skal starte?</strong><br> <!-- Fed tekst + linjeskift -->
-            Vi hjælper dig med at finde retning og næste skridt. <!-- Forklaring -->
-          </li> <!-- Slutter listepunkt -->
+          <li class="mb-3">
+            <strong>• Har du en idé, men mangler sparring?</strong><br> 
+            Få feedback og konkrete forslag til, hvordan du kan arbejde videre. 
+          </li> 
 
-          <li class="mb-3"> <!-- Listepunkt -->
-            <strong>• Har du en idé, men mangler sparring?</strong><br> <!-- Fed tekst + linjeskift -->
-            Få feedback og konkrete forslag til, hvordan du kan arbejde videre. <!-- Forklaring -->
-          </li> <!-- Slutter listepunkt -->
+          <li class="mb-3">
+            <strong>• Føles workshops for overvældende?</strong><br> 
+            Du kan altid starte med en uforpligtende 1:1-samtale. 
+          </li> 
 
-          <li class="mb-3"> <!-- Listepunkt -->
-            <strong>• Føles workshops for overvældende?</strong><br> <!-- Fed tekst + linjeskift -->
-            Du kan altid starte med en uforpligtende 1:1-samtale. <!-- Forklaring -->
-          </li> <!-- Slutter listepunkt -->
+        </ul> 
 
-        </ul> <!-- Slutter liste -->
+        <p class="small text-muted mt-4"> 
+          Vi svarer typisk inden for 1–2 hverdage. 
+        </p> 
 
-        <p class="small text-muted mt-4"> <!-- Lille grå tekst med margin-top -->
-          Vi svarer typisk inden for 1–2 hverdage. <!-- Tekst -->
-        </p> <!-- Slutter tekst -->
+      </div> 
+    </div> 
 
-      </div> <!-- Slutter kort -->
-    </div> <!-- Slutter højre kolonne -->
+  </div> 
 
-  </div> <!-- Slutter row -->
-
-  <!-- Horizontal Contact Info --> <!-- Kommentar -->
-  <div class="row text-center mt-5 contact-info"> <!-- Række med kontaktinfo, centreret, margin-top -->
-    <div class="col-md-3 col-6"> <!-- 4 kolonner på desktop, 2 pr række på mobil -->
-      <i class="bi bi-telephone-fill fs-4 text-primary"></i> <!-- Telefon ikon -->
+  <!-- Horizontal Contact Info -->
+  <div class="row text-center mt-5 contact-info"> 
+    <div class="col-md-3 col-6"> 
+      <i class="bi bi-telephone-fill fs-4 text-primary"></i> 
       <p class="mb-0"><a href="tel:+4525933333">+45 25 93 33 33</a></p> <!-- Klikbart telefonnummer -->
-    </div> <!-- Slutter kolonne -->
+    </div> 
 
-    <div class="col-md-3 col-6"> <!-- Kolonne -->
-      <i class="bi bi-envelope-fill fs-4 text-primary"></i> <!-- Email ikon -->
+    <div class="col-md-3 col-6">
+      <i class="bi bi-envelope-fill fs-4 text-primary"></i> 
       <p class="mb-0"><a href="mailto:Connected@starters.dk">Connected@starters.dk</a></p> <!-- Klikbar mail -->
-    </div> <!-- Slutter kolonne -->
+    </div> 
 
-    <div class="col-md-3 col-6"> <!-- Kolonne -->
-      <i class="bi bi-instagram fs-4 text-primary"></i> <!-- Instagram ikon -->
-      <p class="mb-0"><a href="https://www.instagram.com/"> @Connectedstarters </a></p> <!-- Link til Instagram -->
-    </div> <!-- Slutter kolonne -->
+    <div class="col-md-3 col-6">
+      <i class="bi bi-instagram fs-4 text-primary"></i>
+      <p class="mb-0"><a href="https://www.instagram.com/"> @Connectedstarters </a></p> 
+    </div> 
 
-    <div class="col-md-3 col-6"> <!-- Kolonne -->
-      <i class="bi bi-facebook fs-4 text-primary"></i> <!-- Facebook ikon -->
-      <p class="mb-0"><a href="https://www.facebook.com/"> Connected Starters </a></p> <!-- Link til Facebook -->
-    </div> <!-- Slutter kolonne -->
-  </div> <!-- Slutter row -->
-</section> <!-- Slutter kontakt-sektion -->
+    <div class="col-md-3 col-6">
+      <i class="bi bi-facebook fs-4 text-primary"></i> 
+      <p class="mb-0"><a href="https://www.facebook.com/"> Connected Starters </a></p> 
+    </div> 
+  </div> 
+</section> 
 
-<br> <!-- Luft -->
+<br>
 
-<!-- 1:1 SECTION – KORREKT --> <!-- Kommentar -->
-<section class="py-5 mt-4 bg-primary text-white fade-in"> <!-- Blå sektion med padding, top margin, hvid tekst og fade -->
-  <div class="container"> <!-- Holder indhold pænt -->
-    <h4 class="fw-bold">Vil du hellere starte 1:1?</h4> <!-- Overskrift -->
-    <p class="mb-3"> <!-- Tekst -->
-      Ikke alle føler sig klar til workshops med det samme. <!-- Tekst -->
-      Book en fortrolig online samtale og få personlig sparring. <!-- Tekst -->
-    </p> <!-- Slutter tekst -->
-    <a href="#" class="btn bg-secondary text-black rounded-pill px-5 py-3 fw-semibold"> <!-- CTA-knap -->
-      Book en Zoom-samtale <!-- Tekst -->
-    </a> <!-- Slutter CTA-knap -->
-  </div> <!-- Slutter container -->
+<!-- 1:1 SECTION – KORREKT -->
+<section class="py-5 mt-4 bg-primary text-white fade-in"> 
+  <div class="container"> 
+    <h4 class="fw-bold">Vil du hellere starte 1:1?</h4> 
+    <p class="mb-3"> 
+      Ikke alle føler sig klar til workshops med det samme. 
+      Book en fortrolig online samtale og få personlig sparring. 
+    </p> 
+    <a href="#" class="btn bg-secondary text-black rounded-pill px-5 py-3 fw-semibold"> 
+      Book en Zoom-samtale 
+    </a> 
+  </div> 
 </section> <!-- Slutter 1:1 sektion -->
 
-<br> <!-- Luft -->
-<br> <!-- Luft -->
-<br> <!-- Luft -->
+<br>
+<br>
+<br>
 
-<!-- LOKATIONER: Viser de 3 campusmiljøer --> <!-- Kommentar -->
-<section class="py-5 bg-light text-primary fade-in"> <!-- Lokationer sektion, lys baggrund, blå tekst -->
-  <div class="container text-center"> <!-- Container + centreret tekst -->
-    <h2 class="fw-bold mb-4">Vores lokationer</h2> <!-- Titel -->
+<!-- LOKATIONER: Viser de 3 campusmiljøer -->
+<section class="py-5 bg-light text-primary fade-in">
+  <div class="container text-center"> 
+    <h2 class="fw-bold mb-4">Vores lokationer</h2> 
     <div class="row g-4"> <!-- Grid række -->
 
-      <!-- Kort med information om lokation --> <!-- Kommentar -->
-      <div class="col-md-4"> <!-- 3 kolonner på desktop -->
-        <div class="p-4 shadow-sm rounded bg-white h-100"> <!-- Kort: padding, skygge, rund, hvid baggrund -->
-          <h5 class="fw-bold">Slagelse</h5> <!-- Titel -->
-          <p>Zealand Connect - åbent og dynamisk iværksættermiljø.</p> <!-- Tekst -->
-        </div> <!-- Slutter kort -->
-      </div> <!-- Slutter kolonne -->
+      <!-- Kort med information om lokation -->
+      <div class="col-md-4"> 
+        <div class="p-4 shadow-sm rounded bg-white h-100"> 
+          <h5 class="fw-bold">Slagelse</h5> 
+          <p>Zealand Connect - åbent og dynamisk iværksættermiljø.</p> 
+        </div>
+      </div> 
 
-      <!-- Kort med information om lokation --> <!-- Kommentar -->
-      <div class="col-md-4"> <!-- Kolonne -->
-        <div class="p-4 shadow-sm rounded bg-white h-100"> <!-- Kort -->
-          <h5 class="fw-bold">Køge</h5> <!-- Titel -->
-          <p>Digital Innovationslab - fokus på digital produktudvikling.</p> <!-- Tekst -->
-        </div> <!-- Slutter kort -->
-      </div> <!-- Slutter kolonne -->
+      <!-- Kort med information om lokation -->
+      <div class="col-md-4">
+        <div class="p-4 shadow-sm rounded bg-white h-100"> 
+          <h5 class="fw-bold">Køge</h5> 
+          <p>Digital Innovationslab - fokus på digital produktudvikling.</p> 
+        </div>
+      </div> 
 
-      <!-- Kort med information om lokation --> <!-- Kommentar -->
-      <div class="col-md-4"> <!-- Kolonne -->
-        <div class="p-4 shadow-sm rounded bg-white h-100"> <!-- Kort -->
-          <h5 class="fw-bold">Næstved</h5> <!-- Titel -->
-          <p>Bæredygtige løsninger og tværfaglige samarbejder.</p> <!-- Tekst -->
-        </div> <!-- Slutter kort -->
-      </div> <!-- Slutter kolonne -->
+      <!-- Kort med information om lokation -->
+      <div class="col-md-4">
+        <div class="p-4 shadow-sm rounded bg-white h-100"> 
+          <h5 class="fw-bold">Næstved</h5> 
+          <p>Bæredygtige løsninger og tværfaglige samarbejder.</p> 
+        </div>
+      </div> 
 
-    </div> <!-- Slutter row -->
-  </div> <!-- Slutter container -->
+    </div> 
+  </div> 
 
-  <br> <!-- Luft -->
-  <br> <!-- Luft -->
-  <br> <!-- Luft -->
-</section> <!-- Slutter lokationer -->
+  <br>
+  <br>
+  <br>
+</section> 
 
-<!-- FOOTER: 3 kolonner med info, genveje og sociale medier --> <!-- Kommentar -->
-<footer class="mt-auto"> <!-- Footer -->
-  <div class="container"> <!-- Holder footer indhold -->
+<!-- FOOTER: 3 kolonner med info, genveje og sociale medier -->
+<footer class="mt-auto"> 
+  <div class="container"> 
 
-    <div class="row justify-content-between"> <!-- Række med 3 kolonner -->
+    <div class="row justify-content-between"> 
 
-      <!-- Om os sektion --> <!-- Kommentar -->
-      <div class="col-md-4 mb-3"> <!-- Kolonne 1 -->
-        <h5>Om os</h5> <!-- Titel -->
-        <p>Connected Starters er Zealands iværksættermiljø for studerende på tværs af uddannelser. Vi skaber rammerne for idéudvikling, sparring, workshops og netværk – så du kan udvikle dine projekter og styrke din vej mod iværksætteri.</p> <!-- Tekst -->
-      </div> <!-- Slutter kolonne -->
+      <!-- Om os sektion -->
+      <div class="col-md-4 mb-3"> 
+        <h5>Om os</h5> 
+        <p>Connected Starters er Zealands iværksættermiljø for studerende på tværs af uddannelser. Vi skaber rammerne for idéudvikling, sparring, workshops og netværk – så du kan udvikle dine projekter og styrke din vej mod iværksætteri.</p> 
+      </div> 
 
-      <!-- Genveje sektion --> <!-- Kommentar -->
-      <div class="col-md-3 mb-3"> <!-- Kolonne 2 -->
-        <h5>Genveje</h5> <!-- Titel -->
-        <ul class="list-unstyled"> <!-- Liste uden bullets -->
-          <li><a href="workshop.html" class="text-decoration-none text-white">Workshop & Events</a></li> <!-- Link -->
-          <li><a href="tilmeld.html" class="text-decoration-none text-white">Tilmeld dig</a></li> <!-- Link -->
-          <li><a href="kontakt.html" class="text-decoration-none text-white">Kontakt</a></li> <!-- Link -->
-        </ul> <!-- Slutter liste -->
-      </div> <!-- Slutter kolonne -->
+      <!-- Genveje sektion -->
+      <div class="col-md-3 mb-3"> 
+        <h5>Genveje</h5> 
+        <ul class="list-unstyled">
+          <li><a href="workshop.html" class="text-decoration-none text-white">Workshop & Events</a></li> 
+          <li><a href="tilmeld.html" class="text-decoration-none text-white">Tilmeld dig</a></li> 
+          <li><a href="kontakt.html" class="text-decoration-none text-white">Kontakt</a></li> 
+        </ul> 
+      </div> 
 
-      <!-- Sociale medier sektion --> <!-- Kommentar -->
-      <div class="col-md-3 mb-3"> <!-- Kolonne 3 -->
-        <h5>Følg os</h5> <!-- Titel -->
+      <!-- Sociale medier sektion -->
+      <div class="col-md-3 mb-3"> 
+        <h5>Følg os</h5> 
 
-        <ul class="list-inline social-icons"> <!-- Inline liste -->
-          <li class="list-inline-item"> <!-- Facebook -->
-            <a href="https://www.facebook.com/" class="facebook text-white"> <!-- Link -->
-              <i class="bi bi-facebook"></i> <!-- Ikon -->
-            </a> <!-- Slutter link -->
-          </li> <!-- Slutter item -->
+        <ul class="list-inline social-icons"> 
+          <li class="list-inline-item"> 
+            <a href="https://www.facebook.com/" class="facebook text-white"> 
+              <i class="bi bi-facebook"></i> 
+            </a> 
+          </li> 
 
-          <li class="list-inline-item"> <!-- Instagram -->
-            <a href="https://www.instagram.com/" class="instagram text-white"> <!-- Link -->
-              <i class="bi bi-instagram"></i> <!-- Ikon -->
-            </a> <!-- Slutter link -->
-          </li> <!-- Slutter item -->
-        </ul> <!-- Slutter liste -->
+          <li class="list-inline-item">
+            <a href="https://www.instagram.com/" class="instagram text-white"> 
+              <i class="bi bi-instagram"></i> 
+            </a> 
+          </li> 
+        </ul> 
 
-        <!-- Logo SKAL ligge udenfor ul --> <!-- Kommentar -->
-        <img src="images/Zealandlogo.svg" alt="Zealand logo" class="logo w-50 mt-4"> <!-- Logo -->
-      </div> <!-- Slutter kolonne -->
+        <!-- Logo SKAL ligge udenfor ul -->
+        <img src="images/Zealandlogo.svg" alt="Zealand logo" class="logo w-50 mt-4">
+      </div> 
 
-    </div> <!-- Slutter row -->
+    </div> 
 
     <hr class="mb-4"> <!-- Divider -->
 
-    <!-- Copyright nederst --> <!-- Kommentar -->
-    <div class="row"> <!-- Række -->
-      <div class="col-md-12 text-center"> <!-- Kolonne -->
-        <p>&copy; 2025 Connected Starters. All rights reserved.</p> <!-- Tekst -->
-      </div> <!-- Slutter kolonne -->
-    </div> <!-- Slutter row -->
+    <!-- Copyright nederst -->
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <p>&copy; 2025 Connected Starters. All rights reserved.</p> 
+      </div> 
+    </div> 
 
-  </div> <!-- Slutter container -->
-</footer> <!-- Slutter footer -->
+  </div> 
+</footer>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script> <!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
 <script>
 const fadeElements = document.querySelectorAll('.fade-in'); <!-- Finder alle fade-in elementer -->
 
-// 👉 Fade første element ind automatisk (fx hero) <!-- Kommentar -->
+// 👉 Fade første element ind automatisk (fx hero)
 if (fadeElements.length > 0) { <!-- Tjekker om der findes fade elements -->
     setTimeout(() => { <!-- Forsinker -->
         fadeElements[0].classList.add('show'); <!-- Tilføjer show til første element -->
     }, 500); <!-- 500ms delay -->
 } <!-- Slutter if -->
 
-// 👉 Observer til resten (scroll fade-in) <!-- Kommentar -->
+// 👉 Observer til resten (scroll fade-in)
 const observer = new IntersectionObserver((entries) => { <!-- Observer på scroll -->
     entries.forEach(entry => { <!-- Går igennem alle -->
         if (entry.isIntersecting) { <!-- Hvis synlig -->
@@ -321,7 +321,7 @@ const observer = new IntersectionObserver((entries) => { <!-- Observer på scrol
 }); <!-- Slutter observer -->
 
 fadeElements.forEach(el => observer.observe(el)); <!-- Sætter observer på alle fade-in -->
-</script> <!-- Slutter JS -->
+</script>
 
-</body> <!-- Slutter body -->
-</html> <!-- Slutter HTML -->
+</body>
+</html>

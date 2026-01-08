@@ -1,10 +1,9 @@
 
-// 1. Include functions first (so you can manipulate colors, SVGs, calc, etc) // Kommentar: bootstrap anbefaler at functions kommer først
-@import "../node_modules/bootstrap/scss/functions"; // Kommentar: importerer bootstrap SCSS functions
+// 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
+@import "../node_modules/bootstrap/scss/functions";
 
-// --- Global color variables for Branding --- // Kommentar: dine brandfarver
-// Primary = blå, Secondary = gul // Kommentar: farverne betyder
-$link-decoration: none; // Kommentar: fjerner underline på links som standard (bootstrap variabel)
+// --- Global color variables for Branding ---
+$link-decoration: none;
 $primary: #20247b;
 $secondary: #FFE54A;
 
@@ -12,12 +11,12 @@ $secondary: #FFE54A;
 @import "../node_modules/bootstrap/scss/variables";
 @import "../node_modules/bootstrap/scss/variables-dark";
 
-// --- Custom color map example (used to extend Bootstrap color utilities) --- // Kommentar: du tilføjer en ekstra farve til bootstrap utilities
+// --- Custom color map example (used to extend Bootstrap color utilities)
 $custom-colors: (
         "farve": $cyan-400,
 );
 
-$theme-colors: map-merge($theme-colors, $custom-colors); // Kommentar: fletter dine farver ind i bootstraps $theme-colors
+$theme-colors: map-merge($theme-colors, $custom-colors);
 
 // Load the compiled Bootstrap components (mixins, grids, utilities) // Kommentar: loader bootstrap komponenter samlet
 @import "bootstrapComponents";
@@ -79,13 +78,13 @@ body{margin-top:20px;}
 // =======================================
 
 
-.cta-btn { // Kommentar: klassen på din hero CTA
-  transition: all 0.3s ease; // Kommentar: gør hover glidende (farve, transform, shadow)
-} // Kommentar: slutter regel
+.cta-btn { // Kommentar: klassen på hero CTA
+  transition: all 0.3s ease;
+}
 
 .cta-btn:hover { // Kommentar: hover på hero CTA
   background-color: #FFE54A !important;
-  color: black !important; // Kommentar: gør teksten sort på hover
+  color: black !important;
   transform: translateY(-3px) scale(1.03); // Kommentar: løfter knappen og gør den lidt større
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
@@ -102,23 +101,23 @@ body{margin-top:20px;}
    =======================================
 
    Effekt: hover = blå baggrund, hvid tekst // Kommentar: forklarer hover-adfærd
-*/ // Kommentar: slut på kommentar-blok
+*/
 
 
 .feature-box-1 {
   padding: 32px;
   box-shadow: 0 0 30px rgba(31, 45, 61, 0.125);
-  margin: 15px 0; // Kommentar: afstand over/under
+  margin: 15px 0;
   position: relative;
   z-index: 1; // Kommentar: sørger for at kortet ligger over baggrunden
   border-radius: 10px;
   overflow: hidden;
-  transition: ease all 0.35s; // Kommentar: glidende animation på hover
+  transition: ease all 0.35s;
   top: 0; // Kommentar: udgangspunkt (bruges når hover løfter kortet)
 }
 
 .feature-box-1 * {
-  transition: ease all 0.35s; // Kommentar: gør tekst/ikon glidende når farver skifter
+  transition: ease all 0.35s;
 }
 
 .feature-box-1 .icon { // Kommentar: cirklen med ikon
@@ -139,7 +138,7 @@ body{margin-top:20px;}
 
 .feature-box-1 h4 {
   color: #20247b;
-  font-weight: 600; // Kommentar: semi-bold
+  font-weight: 600;
 }
 
 .feature-box-1 p {
@@ -169,7 +168,7 @@ body{margin-top:20px;}
 }
 
 .feature-box-1:hover p { // Kommentar: hover gør brødtekst lys/hvid
-  color: rgba(255, 255, 255, 0.8); // Kommentar: lidt gennemsigtig hvid
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .feature-box-1:hover:after { // Kommentar: hover gør overlay synlig
@@ -193,12 +192,12 @@ body{margin-top:20px;}
 // =======================================
 
 
-.section { // Kommentar: alle sektioner med klassen .section
-  padding: 100px 0; // Kommentar: stor top/bottom padding
-  position: relative; // Kommentar: giver mulighed for absolute elements inde i
+.section {
+  padding: 100px 0;
+  position: relative;
 }
-.section-title { // Kommentar: wrapper til overskrifter
-  padding-bottom: 45px; // Kommentar: luft under titelblokken
+.section-title {
+  padding-bottom: 45px;
 }
 
 .section-title h2 { // Kommentar: styling af h2 titler inde i section-title
@@ -231,7 +230,7 @@ body{margin-top:20px;}
 .step-card {
   background-color: #ffffff;
   padding: 24px 20px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.05); // Kommentar: blød skygge
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
   transition: transform .2s ease, box-shadow .2s ease; // Kommentar: glidende hover
 }
 
@@ -286,10 +285,10 @@ body{margin-top:20px;}
 footer {
   background-color: #20247b;
   color: #fff;
-  padding: 3rem 0; // Kommentar: top/bottom padding
+  padding: 3rem 0;
 }
 
-// Sociale medier ikoner i footer // Kommentar: forklaring
+// Sociale medier ikoner i footer
 .social-icons a {
   font-size: 1.25rem;
 }
@@ -301,7 +300,7 @@ body {
 }
 
 
-.sonya{ // Kommentar: klasse du bruger på step-sektionen
+.sonya{
   margin-bottom: 70px;
 }
 
@@ -430,7 +429,7 @@ section[id] { // Kommentar: alle section der har et id (bruges til anchor scroll
   background-color: transparent;
   border-radius: 999px;
 
-  /* 🔽 DET VIGTIGE */ // Kommentar: markerer det vigtige
+  /* 🔽 DET VIGTIGE */
   font-size: 0.9rem;          /* samme som .nav-link */ // Kommentar: matcher nav-link størrelse
   padding: 5px 16px;        /* mindre højde */ // Kommentar: gør knappen lavere end 8px 24px
   line-height: 1.6; // Kommentar: justerer linjehøjde så teksten ser centreret ud
@@ -439,8 +438,8 @@ section[id] { // Kommentar: alle section der har et id (bruges til anchor scroll
 }
 
 .btn-outline-primary-pill:hover {
-  background-color: #20247b; // Kommentar: bliver blå
-  color: #fff; // Kommentar: tekst bliver hvid
+  background-color: #20247b;
+  color: #fff;
 }
 
 
