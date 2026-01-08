@@ -1,128 +1,143 @@
-<!DOCTYPE html>
-<!-- Hoved-HTML dokument for Connected Starters landingpage -->
-<html lang="da">
-<!-- SIDEHOVED: Meta-data, titler og stylesheet links -->
-<head>
-	<meta charset="utf-8">
+<!DOCTYPE html> <!-- HTML5 dokumenttype -->
+<html lang="da"> <!-- Starter dokument + dansk sprog -->
 
-	<title>Connected Starters</title>
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
+<head> <!-- Side-info (ikke synligt indhold) -->
+  <meta charset="utf-8"> <!-- ÆØÅ virker korrekt -->
 
-  <meta name="description" content="Connected Starters er Zealands iværksættermiljø for studerende. Få sparring, workshops og 1:1-vejledning – også hvis du ikke har en færdig idé endnu.">
-  <meta name="robots" content="index, follow">
-  <meta name="author" content="Sonja Durrani">
-  <meta name="copyright" content="© 2025 Sonja Durrani – Connected Starters">
+  <title>Connected starters</title> <!-- Titel i browser-tab -->
 
-  <!-- Link til eget stylesheet -->
-  <link href="css/styles.css" rel="stylesheet" type="text/css">
-  <!-- Bootstrap Icons -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-  <!-- Font Awesome (gammel version - anbefalet at fjerne hvis ikke brugt) -->
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
-  <!-- Font Awesome 6.5 (ikonpakke der bruges på siden) -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- Favicon -->
+  <link rel="icon" href="/favicon.ico" type="image/x-icon"> <!-- Standard favicon -->
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"> <!-- Ekstra støtte -->
+
+  <meta name="description" content="Tilmeld dig Connected Starters og få adgang til sparring, workshops og et trygt iværksættermiljø for studerende på Zealand."> <!-- SEO: kort beskrivelse til Google -->
+  <meta name="robots" content="index, follow"> <!-- SEO: Google må indeksere siden og følge links -->
+  <!--  <meta name="robots" content="noindex, nofollow">--> <!-- Alternativ robots: (slå fra) - kommenteret ud -->
+  <meta name="author" content="Sonja Durrani"> <!-- Angiver forfatter af siden -->
+  <meta name="copyright" content="© 2025 Sonja Durrani – Connected Starters"> <!-- Copyright info -->
 
 
+  <!-- Bootstrap CSS (vigtigt for container/row/col osv.) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"> <
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
+
+  <link href="css/styles.css" rel="stylesheet" type="text/css"> <!-- Din CSS -->
+
+  <!-- Ikoner -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"> <!-- Bootstrap icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"> <!-- Font Awesome -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Responsivt layout -->
+</head> <!-- Head slutter -->
 
 <body>
 
-<!-- NAVIGATIONSBAR: Topmenu med logo og links -->
+<!-- NAVIGATIONSBAR: Topmenu med logo og links --> <!-- Kommentar: navbar sektion -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm fixed-top">
   <div class="container">
-    <!-- Logo til venstre i navbar -->
-    <a class="navbar-brand d-flex align-items-center" href="index.html">
-      <img src="images/logo1.svg" alt="Connected Starters logo" height="70">
+
+
+    <a class="navbar-brand d-flex align-items-center" href="index.html"> <!-- Klikbart logo der går til forsiden -->
+      <img src="images/logo1.svg" alt="Connected Starters logo" height="70"> <!-- Logo-billede + alt tekst + højde -->
     </a>
 
-    <!-- Mobil-menu knap (hamburger ikon) -->
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav1">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+    <!-- Mobil-menu knap (hamburger ikon) --> <!-- Kommentar: toggler til mobil -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav1"> <!-- Bootstrap knap der åbner/lukker menu -->
+      <span class="navbar-toggler-icon"></span> <!-- Bootstrap ikon til hamburger -->
+    </button> <!-- Slutter toggler knap -->
 
-    <!-- Navigation links til højre -->
-    <div class="collapse navbar-collapse" id="navbarNav1">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item">
-          <a class="nav-link " href="services.html">Services</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="workshop.html">Workshop & Events</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="om.html">Om os</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="kontakt.html">Kontakt</a>
+    <!-- Navigation links til højre --> <!-- Kommentar: menu links -->
+    <div class="collapse navbar-collapse" id="navbarNav1"> <!-- Collapse wrapper: skjules på mobil -->
+      <ul class="navbar-nav ms-auto"> <!-- Bootstrap navliste + ms-auto skubber links til højre -->
+
+        <li class="nav-item"> <!-- Ét menu-punkt -->
+          <a class="nav-link " href="services.html">Services</a> <!-- Link til services -->
         </li>
 
-        <li class="nav-item">
-          <a href="tilmeld.html" class="btn btn-outline-primary-pill fw-semibold ms-lg-3">
-            Tilmeld dig
+        <li class="nav-item"> <!-- Ét menu-punkt -->
+          <a class="nav-link" href="workshop.html">Workshop & Events</a> <!-- Link til workshops -->
+        </li>
+
+        <li class="nav-item"> <!-- Ét menu-punkt -->
+          <a class="nav-link" href="om.html">Om os</a> <!-- Link til om os -->
+        </li>
+
+        <li class="nav-item"> <!-- Ét menu-punkt -->
+          <a class="nav-link" href="kontakt.html">Kontakt</a> <!-- Link til kontakt -->
+        </li>
+
+        <li class="nav-item"> <!-- CTA menu-punkt -->
+          <a href="tilmeld.html" class="btn btn-outline-primary-pill fw-semibold ms-lg-3"> <!-- CTA knap med din custom class -->
+            Tilmeld dig <!-- Teksten på knappen -->
           </a>
         </li>
-
-
 
       </ul>
     </div>
   </div>
 </nav>
 
+<!-- HERO SECTION: Fuldbredde billede med overlay og CTA --> <!-- Kommentar: hero område -->
+<section> <!-- Starter hero section -->
 
-<!-- HERO SECTION: Fuldbredde billede med overlay og CTA -->
-<section>
-<div style="height: 70vh; background-image: url(images/hero.webp); background-size: cover; background-position: center;" class="position-relative w-100">
-  <!-- Overlay med mørk baggrund -->
-  <div class="position-absolute text-white d-flex flex-column align-items-start justify-content-center" style="top: 0; right: 0; bottom: 0; left: 0; background-color: rgba(0,0,0,.7);">
-    <!-- Container der holder hero-teksten -->
-    <div class="container">
-      <div class="col-12 col-md-8 col-lg-6">
-        <!-- Introduktionstekst -->
-        <span class="text-uppercase text-white-50">Et stærkt miljø for ambitiøse studerende</span>
-        <!-- Hovedoverskrift med highlighted secondary farve -->
+  <div style="height: 70vh; background-image: url(images/hero.webp); background-size: cover; background-position: center;" class="position-relative w-100">
+    <!-- Div: hero baggrundsbillede. height 70vh = 70% af skærmhøjde. cover = fylder hele. center = centrér -->
 
-        <h1 class="mb-4 mt-2  font-weight-bold">Fra vision til virkelighed. <span class="text-secondary">Bliv iværksætter</span></h1>
-        <!-- Undertekst / paragraf -->
-        <p  class="text-white">Connected Starters giver dig sparring, workshops og netværk, så du trygt kan udvikle dine idéer og bringe dem hele vejen fra tanke til virkelighed.</p>
-        <div class="mt-5">
-          <!-- Primær CTA-knap -->
-          <!-- hover background-color: white; color: black; -->
-          <a href="tilmeld.html" class="btn cta-btn px-5 py-3 text-black mt-3 mt-sm-0 bg-secondary rounded-pill fw-semibold ">
-            Start din rejse
-          </a>
+    <!-- Overlay med mørk baggrund --> <!-- Kommentar: overlay lag -->
+    <div class="position-absolute text-white d-flex flex-column align-items-start justify-content-center" style="top: 0; right: 0; bottom: 0; left: 0; background-color: rgba(0,0,0,.7);">
+      <!-- Overlay fylder hele heroen (top/right/bottom/left 0) + mørk gennemsigtig baggrund -->
+
+      <!-- Container der holder hero-teksten --> <!-- Kommentar: tekstcontainer -->
+      <div class="container"> <!-- Bootstrap container for pæn margin/padding -->
+        <div class="col-12 col-md-8 col-lg-6">
+
+          <!-- Introduktionstekst --> <!-- Kommentar: lille overtekst -->
+          <span class="text-uppercase text-white-50">Et stærkt miljø for ambitiøse studerende</span> <!-- Uppercase + lys grå -->
+
+          <!-- Hovedoverskrift med highlighted secondary farve --> <!-- Kommentar: headline -->
+          <h1 class="mb-4 mt-2  font-weight-bold">
+            Fra vision til virkelighed. <span class="text-secondary">Bliv iværksætter</span>
+          </h1> <!-- Stor titel + secondary highlight -->
+
+          <!-- Undertekst / paragraf --> <!-- Kommentar: beskrivelse -->
+          <p class="text-white">
+            Connected Starters giver dig sparring, workshops og netværk, så du trygt kan udvikle dine idéer og bringe dem hele vejen fra tanke til virkelighed.
+          </p> <!-- Tekst under hero overskrift -->
+
+          <div class="mt-5"> <!-- Giver top-margin før knap -->
+            <!-- Primær CTA-knap --> <!-- Kommentar: CTA -->
+            <a href="tilmeld.html" class="btn cta-btn px-5 py-3 text-black mt-3 mt-sm-0 bg-secondary rounded-pill fw-semibold ">
+              Start din rejse
+            </a>
+          </div>
+
         </div>
       </div>
     </div>
   </div>
-</div>
 
 </section>
 
-
-
-
-<!-- FEATURE SEKTION: Viser hvad Connected Starters tilbyder -->
-<section class="section services-section mx-2 fade-in" id="services">
-  <div class="container">
+<!-- FEATURE SEKTION: Viser hvad Connected Starters tilbyder --> <!-- Kommentar: feature sektion -->
+<section class="section services-section mx-2 fade-in" id="services"> <!-- Sektion med spacing + fade-in + id -->
+  <div class="container"> <!-- Container for pæn bredde -->
 
     <div class="row">
       <div class="col-lg-6 col-12">
-        <!-- Sektionens titel og introduktionstekst -->
+
+        <!-- Sektionens titel og introduktionstekst --> <!-- Kommentar: titel -->
         <div class="section-title">
-          <h2 class="fw-bold text-primary">Hvad du får hos Connected Starters</h2>
+          <h2 class="fw-bold text-primary">Hvad du får hos Connected Starters</h2> <!-- Overskrift -->
           <p>Uanset om du har en klar idé eller bare er nysgerrig, får du her et fællesskab, der hjælper dig med at udvikle dine projekter.</p>
         </div>
       </div>
     </div>
 
-    <!-- Grid der indeholder alle feature-boxe -->
-    <section class="features">
-      <div class="row g-4 align-items-stretch">
 
-        <!-- FEATURE BOKS: Ikon + overskrift + kort beskrivelse -->
+    <section class="features">
+      <div class="row g-4 align-items-stretch"> <!-- Bootstrap row + gap + stretch -->
+
+        <!-- FEATURE 1 --> <!-- Kommentar: første feature -->
         <div class="col-sm-6 col-lg-4 col-12">
           <div class="feature-box-1 h-100">
             <div class="icon">
@@ -135,10 +150,10 @@
           </div>
         </div>
 
-        <!-- FEATURE BOKS: Ikon + overskrift + kort beskrivelse -->
+        <!-- FEATURE 2 --> <!-- Kommentar: anden feature -->
         <div class="col-sm-6 col-lg-4 col-12">
           <div class="feature-box-1 h-100">
-            <div class="icon">
+            <div class="icon"> <!-- Ikon wrapper -->
               <i class="fa-solid fa-users"></i>
             </div>
             <div class="feature-content">
@@ -148,10 +163,10 @@
           </div>
         </div>
 
-        <!-- FEATURE BOKS: Ikon + overskrift + kort beskrivelse -->
-        <div class="col-sm-6 col-lg-4 col-12">
-          <div class="feature-box-1 h-100">
-            <div class="icon">
+        <!-- FEATURE 3 --> <!-- Kommentar: tredje feature -->
+        <div class="col-sm-6 col-lg-4 col-12"> <!-- Responsiv kolonne -->
+          <div class="feature-box-1 h-100"> <!-- Feature box -->
+            <div class="icon"> <!-- Ikon wrapper -->
               <i class="fa-solid fa-globe"></i>
             </div>
             <div class="feature-content">
@@ -161,25 +176,25 @@
           </div>
         </div>
 
-        <!-- FEATURE BOKS: Ikon + overskrift + kort beskrivelse -->
+        <!-- FEATURE 4 --> <!-- Kommentar: fjerde feature -->
         <div class="col-sm-6 col-lg-4 col-12">
           <div class="feature-box-1 h-100">
             <div class="icon">
               <i class="fa-solid fa-briefcase"></i>
             </div>
-            <div class="feature-content">
-              <h4>Adgang til virksomheder</h4>
+            <div class="feature-content"> <!-- Tekst indhold -->
+              <h4>Adgang til virksomheder</h4> <!-- Titel -->
               <p>Få kontakt til virksomheder, hvor du kan teste idéer, få feedback og arbejde med virkelige problemstillinger.</p>
             </div>
           </div>
         </div>
 
-        <!-- FEATURE BOKS: Ikon + overskrift + kort beskrivelse -->
+
         <div class="col-sm-6 col-lg-4 col-12">
-          <div class="feature-box-1 h-100">
-            <div class="icon">
-              <i class="fa-solid fa-gears"></i>
-            </div>
+          <div class="feature-box-1 h-100"> <!-- Feature box -->
+            <div class="icon"> <!-- Ikon wrapper -->
+              <i class="fa-solid fa-gears"></i> <!-- Ikon -->
+            </div> <!-- Slutter ikon -->
             <div class="feature-content">
               <h4>Kreative & digitale faciliteter</h4>
               <p>Brug moderne udstyr og digitale laboratorier, der gør det lettere at udvikle, teste og forme dine projekter.</p>
@@ -187,9 +202,9 @@
           </div>
         </div>
 
-        <!-- FEATURE BOKS: Ikon + overskrift + kort beskrivelse -->
+        <!-- FEATURE 6 --> <!-- Kommentar: sjette feature -->
         <div class="col-sm-6 col-lg-4 col-12">
-          <div class="feature-box-1 h-100">
+          <div class="feature-box-1 h-100 mb-5"> <!-- Feature box + ekstra bundmargin -->
             <div class="icon">
               <i class="bi bi-rocket-takeoff"></i>
             </div>
@@ -205,30 +220,40 @@
       <br>
 
     </section>
-    <!-- FEATURE SLUT -->
   </div>
 </section>
 
-<!-- INFORMATIONSSEKTION -->
-<section class="py-5 fade-in">
+<!-- INFORMATIONSSEKTION --> <!-- Kommentar: tekst + billede sektion -->
+<section class="py-5 fade-in"> <!-- Padding y + fade -->
   <div class="container">
 
-    <div class="row align-items-center">
+    <div class="row align-items-center"> <!-- Row + centrér vertikalt -->
 
-      <!-- VENSTRE SIDE: Overskrift + tekst -->
+      <!-- VENSTRE SIDE: Overskrift + tekst --> <!-- Kommentar: venstre kolonne -->
       <div class="col-lg-6 col-12">
 
         <h2 class="fw-bold text-primary mx-3">
           Stedet hvor idéer bliver til muligheder
         </h2>
 
-        <!-- Gul streg -->
-        <div class="bg-secondary mb-4" style="width:60px; height:4px;"></div>
+
+
+
+
+        <!-- Gul streg --> <!-- Kommentar: dekorativ streg -->
+        <div class="bg-secondary mb-4" style="width:60px; height:4px;"></div> <!-- Gul streg -->
+
+
+
+
+
+
+
         <p class="lh-lg mx-1">
           Connected Starters er skabt for at give studerende et sted, hvor idéer kan få plads til at udvikle sig.
           Her handler det ikke om at have den perfekte idé fra starten, men om at udforske muligheder, stille spørgsmål
           og opdage nye veje, du måske ikke havde overvejet. Det er et miljø, der gør det lettere at tage de første skridt.
-        </p>
+        </p> <!-- Slutter p -->
 
         <p class="lh-lg mx-1">
           Mange studerende går rundt med tanker, der kunne blive til noget større – men mangler et sted at begynde.
@@ -243,33 +268,28 @@
         <img
                 src="images/tekst.webp"
                 alt="Connected Starters fællesskab"
-                class="img-fluid rounded shadow-lg">
+                class="img-fluid rounded shadow-lg"
+        />
       </div>
-
     </div>
-
   </div>
   <br>
   <br>
   <br>
-
 </section>
 
-
-
-<!-- STEP-SEKTION: Viser processen for at deltage i Connected Starters -->
-<section class="py-5 sonya fade-in">
-  <div class="container text-center">
+<!-- STEP-SEKTION: Viser processen for at deltage i Connected Starters --> <!-- Kommentar: step sektion -->
+<section class="py-5 sonya fade-in"> <!-- Padding + din custom margin class + fade -->
+  <div class="container text-center"> <!-- Container + centrer tekst -->
     <h2 class="fw-bold mb-4 text-primary">Sådan kommer du i gang</h2>
 
-    <div class="row g-4 justify-content-center">
+    <div class="row g-4 justify-content-center"> <!-- Row med spacing -->
 
-      <!-- Step 1/2/3/4: ikon + titel + kort tekst -->
-      <!-- Step 1 -->
+      <!-- Step 1 --> <!-- Kommentar: step 1 -->
       <div class="col-12 col-md-3">
         <div class="step-card h-100">
-          <div class="step-illustration mb-3">
-            <i class="fa-solid fa-1"></i>
+          <div class="step-illustration mb-3"> <!-- Runde ikonbaggrund -->
+            <i class="fa-solid fa-1"></i> <!-- Ikon/nummer -->
           </div>
           <h6 class="fw-bold mb-1 text-primary">Tilmeld dig</h6>
           <p class="small text-black mb-0 ">
@@ -278,8 +298,7 @@
         </div>
       </div>
 
-      <!-- Step 1/2/3/4: ikon + titel + kort tekst -->
-      <!-- Step 2 -->
+      <!-- Step 2 --> <!-- Kommentar: step 2 -->
       <div class="col-12 col-md-3">
         <div class="step-card h-100">
           <div class="step-illustration mb-3">
@@ -292,8 +311,7 @@
         </div>
       </div>
 
-      <!-- Step 1/2/3/4: ikon + titel + kort tekst -->
-      <!-- Step 3 -->
+      <!-- Step 3 --> <!-- Kommentar: step 3 -->
       <div class="col-12 col-md-3">
         <div class="step-card h-100">
           <div class="step-illustration mb-3">
@@ -306,47 +324,39 @@
         </div>
       </div>
 
-      <!-- Step 1/2/3/4: ikon + titel + kort tekst -->
-      <!-- Step 4 -->
+      <!-- Step 4 --> <!-- Kommentar: step 4 -->
       <div class="col-12 col-md-3">
         <div class="step-card h-100">
           <div class="step-illustration mb-3">
             <i class="fa-solid fa-4"></i>
           </div>
-          <h6 class="fw-bold mb-1 text-primary">Udvikl din idé</h6>
-          <p class="small text-black mb-0">
+          <h6 class="fw-bold mb-1 text-primary">Udvikl din idé</h6> <!-- Titel -->
+          <p class="small text-black mb-0"> <!-- Tekst -->
             Arbejd videre med din idé og gør den klar til næste skridt.
           </p>
         </div>
       </div>
-
     </div>
 
-    <!-- CTA under step-sektion -->
+    <!-- CTA under step-sektion --> <!-- Kommentar: CTA under steps -->
     <div class="mt-3">
       <p class="mb-4 text-primary fw-semibold">
         Bliv en del af Connected Starters og få adgang til sparring, workshops og netværk.
       </p>
-      <a href="tilmeld.html" class="btn cta-btn-2 px-4 py-2 rounded-pill fw-semibold">Tilmeld dig i dag</a>
+      <a href="tilmeld.html" class="btn cta-btn-2 px-4 py-2 rounded-pill fw-semibold">Tilmeld dig i dag</a> <!-- CTA knap -->
     </div>
-
   </div>
 </section>
 
 
-
-
-
-
-
-<!-- LOKATIONER: Viser de 3 campusmiljøer -->
+<!-- LOKATIONER: Viser de 3 campusmiljøer --> <!-- Kommentar -->
 <section class="py-5 bg-light text-primary fade-in">
   <div class="container text-center">
     <h2 class="fw-bold mb-4">Vores lokationer</h2>
     <div class="row g-4">
 
       <!-- Kort med information om lokation -->
-      <div class="col-md-4 col-12 col-lg-4">
+      <div class="col-md-4">
         <div class="p-4 shadow-sm rounded bg-white h-100">
           <h5 class="fw-bold">Slagelse</h5>
           <p>Zealand Connect - åbent og dynamisk iværksættermiljø.</p>
@@ -354,7 +364,7 @@
       </div>
 
       <!-- Kort med information om lokation -->
-      <div class="col-md-4 col-12 col-lg-4">
+      <div class="col-md-4">
         <div class="p-4 shadow-sm rounded bg-white h-100">
           <h5 class="fw-bold">Køge</h5>
           <p>Digital Innovationslab - fokus på digital produktudvikling.</p>
@@ -362,7 +372,7 @@
       </div>
 
       <!-- Kort med information om lokation -->
-      <div class="col-md-4 col-12 col-lg-4">
+      <div class="col-md-4">
         <div class="p-4 shadow-sm rounded bg-white h-100">
           <h5 class="fw-bold">Næstved</h5>
           <p>Bæredygtige løsninger og tværfaglige samarbejder.</p>
@@ -371,23 +381,18 @@
 
     </div>
   </div>
+
   <br>
   <br>
   <br>
-
-</section>
-
-
-
-
-
-
-
+</section> <!-- Slutter lokationer -->
 
 <!-- FOOTER: 3 kolonner med info, genveje og sociale medier -->
 <footer class="mt-auto">
   <div class="container">
+
     <div class="row justify-content-between">
+
       <!-- Om os sektion -->
       <div class="col-md-4 mb-3">
         <h5>Om os</h5>
@@ -408,62 +413,64 @@
       <div class="col-md-3 mb-3">
         <h5>Følg os</h5>
 
-        <ul class="list-inline social-icons">
-          <li class="list-inline-item">
+        <ul class="list-inline social-icons"> <!-- Ikonliste -->
+          <li class="list-inline-item"> <!-- Facebook -->
             <a href="https://www.facebook.com/" class="facebook text-white">
               <i class="bi bi-facebook"></i>
             </a>
           </li>
 
-          <li class="list-inline-item">
-            <a href="https://www.instagram.com/" class="instagram text-white">
-              <i class="bi bi-instagram"></i>
+          <li class="list-inline-item"> <!-- Instagram -->
+            <a href="https://www.instagram.com/" class="instagram text-white"> <!-- Link -->
+              <i class="bi bi-instagram"></i> <!-- Ikon -->
             </a>
           </li>
         </ul>
 
-        <!-- Logo SKAL ligge udenfor ul -->
-        <img src="images/Zealandlogo.svg" alt="Zealand logo" class="logo w-50 mt-4">
+        <!-- Logo SKAL ligge udenfor ul --> <!-- Kommentar -->
+        <img src="images/Zealandlogo.svg" alt="Zealand logo" class="logo w-50 mt-4"> <!-- Logo -->
       </div>
-    </div>
+
+    </div> <!-- Slutter row -->
 
     <hr class="mb-4">
 
-    <!-- Copyright nederst -->
+    <!-- Copyright nederst --> <!-- Kommentar -->
     <div class="row">
       <div class="col-md-12 text-center">
-        <p>&copy; 2025 Connected Starters. All rights reserved.</p>
+        <p>&copy; 2026 Connected Starters. All rights reserved.</p>
       </div>
     </div>
+
   </div>
 </footer>
 
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script> <!-- Bootstrap JS -->
 
 <script>
-    const fadeElements = document.querySelectorAll('.fade-in');
+    const fadeElements = document.querySelectorAll('.fade-in'); <!-- Finder alle fade-in elementer -->
 
-    // 👉 Fade første element ind automatisk (fx hero)
-    if (fadeElements.length > 0) {
-        setTimeout(() => {
-            fadeElements[0].classList.add('show');
-        }, 500);
+    // 👉 Fade første element ind automatisk (fx hero) <!-- Kommentar -->
+    if (fadeElements.length > 0) { <!-- Hvis der findes elementer -->
+        setTimeout(() => { <!-- Vent lidt -->
+            fadeElements[0].classList.add('show'); <!-- Vis første element -->
+        }, 500); <!-- Vent 500ms -->
     }
 
-    // 👉 Observer til resten (scroll fade-in)
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('show');
-                observer.unobserve(entry.target); // fade-in kun én gang
+    // 👉 Observer til resten (scroll fade-in) <!-- Kommentar -->
+    const observer = new IntersectionObserver((entries) => { <!-- Observer -->
+        entries.forEach(entry => { <!-- Loop -->
+            if (entry.isIntersecting) { <!-- Hvis element er synligt -->
+                entry.target.classList.add('show'); <!-- Tilføj show -->
+                observer.unobserve(entry.target); <!-- Gør det kun én gang -->
             }
         });
     }, {
-        threshold: 0.2
+        threshold: 0.2 <!-- 20% synlig før den aktiverer -->
     });
 
-    fadeElements.forEach(el => observer.observe(el));
+    fadeElements.forEach(el => observer.observe(el)); <!-- Observer alle fade-in -->
 </script>
+
 </body>
 </html>

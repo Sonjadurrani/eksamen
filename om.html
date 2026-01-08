@@ -1,346 +1,272 @@
+<!DOCTYPE html> <!-- Fortæller browseren at dette er HTML5 -->
+<html lang="da"> <!-- Starter HTML og angiver siden er på dansk -->
+<head> <!-- Head = info om siden (SEO, titel, links) -->
 
-<!-- Hoved-HTML dokument for Connected Starters landingpage -->
-<html lang="da">
-<!-- SIDEHOVED: Meta-data, titler og stylesheet links -->
-<head>
-  <meta charset="utf-8">
+  <meta charset="utf-8"> <!-- Gør æ/ø/å og specialtegn korrekt -->
 
   <title>Om os</title>
+
   <link rel="icon" href="favicon.ico" type="image/x-icon">
 
-  <meta name="description" content="Læs om Connected Starters – et iværksætterinitiativ under Zealand, der støtter studerende med sparring, workshops og et trygt fællesskab.">
-  <meta name="robots" content="index, follow">
-  <meta name="author" content="Sonja Durrani">
-  <meta name="copyright" content="© 2025 Sonja Durrani – Connected Starters">
-
-  <!-- Link til eget stylesheet -->
-  <link href="css/styles.css" rel="stylesheet" type="text/css">
-  <!-- Bootstrap Icons -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-  <!-- Font Awesome (gammel version - anbefalet at fjerne hvis ikke brugt) -->
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
-
-
-  <!-- Font Awesome 6.5 (ikonpakke der bruges på siden) -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-
-
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
-
-<body>
-
-<!-- NAVIGATIONSBAR: Topmenu med logo og links -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm fixed-top">
-  <div class="container">
-    <!-- Logo til venstre i navbar -->
-    <a class="navbar-brand logo" href="index.html">
-      <img src="images/logo1.svg" alt="Logo" width="auto" height="70" class="logo">
-    </a>
-
-    <!-- Mobil-menu knap (hamburger ikon) -->
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav1">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <!-- Navigation links til højre -->
-    <div class="collapse navbar-collapse" id="navbarNav1">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item">
-          <a class="nav-link " href="services.html">Services</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="workshop.html">Workshop & Events</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" href="om.html">Om os</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="kontakt.html">Kontakt</a>
-        </li>
-
-        <li class="nav-item">
-          <a href="tilmeld.html" class="btn btn-outline-primary-pill fw-semibold ms-lg-3">
-            Tilmeld dig
-          </a>
-        </li>
-
-
-      </ul>
-    </div>
-  </div>
-</nav>
-
-
-
-
-
-
-
-
-
-
-
-<!-- ========================= -->
-<!-- OM OS + VISION & MISSION -->
-<!-- ========================= -->
-
-<section class="py-5 mt-6 mx-2 fade-in" id="omos">
-  <div class="container">
-    <div class="row gx-4 align-items-center justify-content-between">
-
-      <!-- Om os tekst -->
-      <div class="col-md-5 order-2 order-md-1">
-
-        <!-- Sektionstitel -->
-        <div class="section-title mb-4 mt-3" >
-          <h2 class="fw-bold text-primary">Om os</h2>
-        </div>
-
-        <p class="lead">
-          Connected Starters er Zealands iværksættermiljø for studerende.
-          Vi skaber et trygt, praktisk og inspirerende rum, hvor idéer kan
-          udvikles — uanset om du er nybegynder eller allerede har erfaring.
-        </p>
-
-        <p class="lead">
-          Med sparring, workshops og et stærkt fællesskab hjælper vi dig med
-          at omsætte tanker til handling og tage de første skridt mod noget
-          større.
-        </p>
-
-      </div>
-
-      <!-- Om os billede -->
-      <div class="col-md-6 offset-md-1 order-1 order-md-2">
-        <div class="ms-md-5">
-          <img src="images/omos2.webp"
-               alt="Connected Starters miljø"
-               class="img-fluid  rounded-1 shadow-sm">
-        </div>
-      </div>
-
-    </div>
-
-    <br>
-    <br>
-    <br>
-
-
-    <!-- ========== VISION & MISSION ========== -->
-    <div class="row text-center mt-5 g-4">
-
-      <!-- Vision -->
-      <div class="col-md-6">
-        <div class="p-4 h-100 border rounded-3 shadow-sm">
-          <div class="step-illustration mb-3">
-            <i class="fa-solid fa-eye"></i>
-          </div>
-          <h4 class="fw-bold text-primary">Vores Vision</h4>
-          <p class="mt-2">
-            At inspirere og motivere studerende til at tro på deres idéer
-            og skabe et stærkt iværksættermiljø på tværs af alle Zealand’s campusser.
-          </p>
-        </div>
-      </div>
-
-      <!-- Mission -->
-      <div class="col-md-6">
-        <div class="p-4 h-100 border rounded-3 shadow-sm">
-          <div class="step-illustration mb-3">
-            <i class="fa-solid fa-bullseye"></i>
-          </div>
-          <h4 class="fw-bold text-primary">Vores Mission</h4>
-          <p class="mt-2">
-            At give studerende adgang til sparring, workshops, fællesskab
-            og praktiske værktøjer, så de kan udvikle deres projekter fra idé til handling.
-          </p>
-        </div>
-      </div>
-
-    </div>
-    </div>
-</section>
-
-
-
-
-
-
-<br>
-    <br>
-    <br>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- =========================================
-     LOKATIONER (med SVG-kort + tekstbokse)
-========================================= -->
-<section class="py-5 bg-light pb-5 fade-in" >
-  <div class="container">
-
-    <!-- Titel -->
-    <div class="section-title mb-2 mt-5">
-      <h1 class="fw-bold text-primary">Vores lokationer</h1>
-      <p class="mt-3">
-        Connected Starters har iværksættermiljøer tre steder på Zealand – hver med deres egen retning,
-        faciliteter og faglige partnerskaber.
-      </p>
-    </div>
-
-    <div class="row align-items-center g-5">
-
-      <!-- SVG-KORT (VENSTRE) -->
-      <div class="col-lg-6 text-center">
-        <img src="images/Tegnebræt%201.svg" alt="Danmarkskort" class="img-fluid" style="max-width: 450px;">
-      </div>
-
-      <!-- TEKSTER OM LOKATIONER (HØJRE) -->
-      <div class="col-lg-6">
-
-        <!-- SLAGELSE -->
-        <div class="p-4 mb-4 bg-white shadow-sm rounded">
-          <h5 class="fw-bold text-primary">Slagelse – Zealand Connect</h5>
-          <p class="mb-0">
-            Et åbent og dynamisk iværksættermiljø med fokus på innovation, udvikling og tæt dialog med lokale virksomheder.
-            Perfekt for studerende, der vil arbejde praktisk og få hurtig feedback på deres idéer.
-          </p>
-        </div>
-
-        <!-- KØGE -->
-        <div class="p-4 mb-4 bg-white shadow-sm rounded">
-          <h5 class="fw-bold text-primary">Køge – Digital Innovationslab</h5>
-          <p class="mb-0">
-            Et digitalt laboratorie med fokus på AI, teknologier og digital produktudvikling. Her kan du teste prototyper,
-            lære nye værktøjer og arbejde tværfagligt med andre studerende og virksomheder.
-          </p>
-        </div>
-
-        <!-- NÆSTVED -->
-        <div class="p-4 bg-white shadow-sm rounded">
-          <h5 class="fw-bold text-primary">Næstved – Bæredygtigt miljø</h5>
-          <p class="mb-0">
-            Et stærkt fællesskab omkring bæredygtighed og cirkulær økonomi. Her kombineres designtænkning med lokale
-            aktører, så du kan udvikle projekter der gør en forskel.
-          </p>
-        </div>
-
-      </div>
-
-    </div>
-
-  </div>
-  <br>
-  <br>
-  <br>
-
-</section>
-
-
-
-
-
-
-
-
-
-<!-- FOOTER: 3 kolonner med info, genveje og sociale medier -->
-<footer class="mt-auto">
-  <div class="container">
-    <div class="row justify-content-between">
-      <!-- Om os sektion -->
-      <div class="col-md-4 mb-3">
-        <h5>Om os</h5>
-        <p>Connected Starters er Zealands iværksættermiljø for studerende på tværs af uddannelser. Vi skaber rammerne for idéudvikling, sparring, workshops og netværk – så du kan udvikle dine projekter og styrke din vej mod iværksætteri.</p>
-      </div>
-
-      <!-- Genveje sektion -->
-      <div class="col-md-3 mb-3">
-        <h5>Genveje</h5>
-        <ul class="list-unstyled">
-          <li><a href="workshop.html" class="text-decoration-none text-white">Workshop & Events</a></li>
-          <li><a href="tilmeld.html" class="text-decoration-none text-white">Tilmeld dig</a></li>
-          <li><a href="kontakt.html" class="text-decoration-none text-white">Kontakt</a></li>
-        </ul>
-      </div>
-
-      <!-- Sociale medier sektion -->
-      <div class="col-md-3 mb-3">
-        <h5>Følg os</h5>
-
-        <ul class="list-inline social-icons">
-          <li class="list-inline-item">
-            <a href="https://www.facebook.com/" class="facebook text-white">
-              <i class="bi bi-facebook"></i>
-            </a>
-          </li>
-
-          <li class="list-inline-item">
-            <a href="https://www.instagram.com/" class="instagram text-white">
-              <i class="bi bi-instagram"></i>
-            </a>
-          </li>
-        </ul>
-
-        <!-- Logo SKAL ligge udenfor ul -->
-        <img src="images/Zealandlogo.svg" alt="Zealand logo" class="logo w-50 mt-4">
-      </div>
-    </div>
-
-    <hr class="mb-4">
-
-    <!-- Copyright nederst -->
-    <div class="row">
-      <div class="col-md-12 text-center">
-        <p>&copy; 2025 Connected Starters. All rights reserved.</p>
-      </div>
-    </div>
-  </div>
-</footer>
-
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <meta name="description" content="Tilmeld dig Connected Starters og få adgang til sparring, workshops og et trygt iværksættermiljø for studerende på Zealand."> <!-- SEO beskrivelse -->
+
+  <meta name="robots" content="index, follow"> <!-- Google må indeksere og følge links -->
+  <!--  <meta name="robots" content="noindex, nofollow">--> <!-- (Slået fra) ville skjule siden fra Google -->
+
+  <meta name="author" content="Sonja Durrani"> <!-- Hvem der har lavet siden -->
+  <meta name="copyright" content="© 2025 Sonja Durrani – Connected Starters"> <!-- Copyright -->
+
+  <link href="css/styles.css" rel="stylesheet" type="text/css"> <!-- Dit eget CSS stylesheet -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"> <!-- Bootstrap Icons -->
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet"> <!-- Font Awesome (ældre version) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"> <!-- Font Awesome (nyere version) -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Gør siden responsiv på mobil -->
+</head> <!-- Head slutter -->
+
+<body> <!-- Body = alt synligt indhold -->
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm fixed-top"> <!-- Top menu: Bootstrap navbar, lys baggrund, fast i toppen -->
+  <div class="container"> <!-- Holder navbar-indhold pænt inde i en bredde -->
+    <a class="navbar-brand logo" href="index.html"> <!-- Logo som link tilbage til forsiden -->
+      <img src="images/logo1.svg" alt="Logo" width="auto" height="70" class="logo"> <!-- Logo-billede -->
+    </a> <!-- Slutter logo-link -->
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav1"> <!-- Burger-knap på mobil -->
+      <span class="navbar-toggler-icon"></span> <!-- Selve burger-ikonet -->
+    </button> <!-- Slutter burger-knap -->
+
+    <div class="collapse navbar-collapse" id="navbarNav1"> <!-- Den del der åbner/lukker på mobil -->
+      <ul class="navbar-nav ms-auto"> <!-- Liste med links, ms-auto skubber den til højre -->
+
+        <li class="nav-item"> <!-- Menu punkt -->
+          <a class="nav-link " href="services.html">Services</a> <!-- Link til Services -->
+        </li> <!-- Slutter menu punkt -->
+
+        <li class="nav-item"> <!-- Menu punkt -->
+          <a class="nav-link" href="workshop.html">Workshop & Events</a> <!-- Link til Workshop -->
+        </li> <!-- Slutter menu punkt -->
+
+        <li class="nav-item"> <!-- Menu punkt -->
+          <a class="nav-link active" href="om.html">Om os</a> <!-- Active viser man er på denne side -->
+        </li> <!-- Slutter menu punkt -->
+
+        <li class="nav-item"> <!-- Menu punkt -->
+          <a class="nav-link" href="kontakt.html">Kontakt</a> <!-- Link til kontakt -->
+        </li> <!-- Slutter menu punkt -->
+
+        <li class="nav-item"> <!-- Menu punkt til CTA-knap -->
+          <a href="tilmeld.html" class="btn btn-outline-primary-pill fw-semibold ms-lg-3"> <!-- CTA knap -->
+            Tilmeld dig <!-- Knaptekst -->
+          </a> <!-- Slutter knap-link -->
+        </li> <!-- Slutter menu punkt -->
+
+      </ul> <!-- Slutter menu-listen -->
+    </div> <!-- Slutter collapse container -->
+  </div> <!-- Slutter navbar container -->
+</nav> <!-- Slutter navbar -->
+
+<section class="py-5 mt-6 mx-2 fade-in" id="omos"> <!-- Om os sektion med padding, margin og fade-in -->
+  <div class="container"> <!-- Holder indholdet pænt -->
+    <div class="row gx-4 align-items-center justify-content-between"> <!-- Grid række med mellemrum og alignment -->
+
+      <div class="col-md-5 order-2 order-md-1"> <!-- Tekstkolonne: kommer efter billedet på mobil, før på desktop -->
+        <div class="section-title mb-4 mt-3"> <!-- Titelblok med margin -->
+          <h2 class="fw-bold text-primary">Om os</h2> <!-- Overskrift, fed, blå -->
+        </div> <!-- Slutter titelblok -->
+
+        <p class="lead"> <!-- Stor “lead” tekst -->
+          Connected Starters er Zealands iværksættermiljø for studerende. <!-- Tekst -->
+          Vi skaber et trygt, praktisk og inspirerende rum, hvor idéer kan <!-- Tekst -->
+          udvikles — uanset om du er nybegynder eller allerede har erfaring. <!-- Tekst -->
+        </p> <!-- Slutter paragraf -->
+
+        <p class="lead"> <!-- Endnu en lead paragraf -->
+          Med sparring, workshops og et stærkt fællesskab hjælper vi dig med <!-- Tekst -->
+          at omsætte tanker til handling og tage de første skridt mod noget <!-- Tekst -->
+          større. <!-- Tekst -->
+        </p> <!-- Slutter paragraf -->
+      </div> <!-- Slutter tekstkolonne -->
+
+      <div class="col-md-6 offset-md-1 order-1 order-md-2"> <!-- Billedkolonne: kommer først på mobil, højre på desktop -->
+        <div class="ms-md-5"> <!-- Giver venstre margin på desktop -->
+          <img src="images/omos2.webp" alt="Connected Starters miljø" class="img-fluid  rounded-1 shadow-sm"> <!-- Responsivt billede med runde hjørner og skygge -->
+        </div> <!-- Slutter margin wrapper -->
+      </div> <!-- Slutter billedkolonne -->
+
+    </div> <!-- Slutter row -->
+
+    <br> <!-- Luft -->
+    <br> <!-- Luft -->
+    <br> <!-- Luft -->
+
+    <div class="row text-center mt-5 g-4"> <!-- Vision/Mission række, centreret tekst, grid gap -->
+
+      <div class="col-md-6"> <!-- Vision kolonne -->
+        <div class="p-4 h-100 border rounded-3 shadow-sm"> <!-- Kort med padding, fuld højde, kant og skygge -->
+          <div class="step-illustration mb-3"> <!-- Ikon wrapper -->
+            <i class="fa-solid fa-eye"></i> <!-- Eye ikon -->
+          </div> <!-- Slutter ikon wrapper -->
+          <h4 class="fw-bold text-primary">Vores Vision</h4> <!-- Vision titel -->
+          <p class="mt-2"> <!-- Vision tekst -->
+            At inspirere og motivere studerende til at tro på deres idéer <!-- Tekst -->
+            og skabe et stærkt iværksættermiljø på tværs af alle Zealand’s campusser. <!-- Tekst -->
+          </p> <!-- Slutter vision tekst -->
+        </div> <!-- Slutter vision kort -->
+      </div> <!-- Slutter vision kolonne -->
+
+      <div class="col-md-6"> <!-- Mission kolonne -->
+        <div class="p-4 h-100 border rounded-3 shadow-sm"> <!-- Kort med padding, fuld højde, kant og skygge -->
+          <div class="step-illustration mb-3"> <!-- Ikon wrapper -->
+            <i class="fa-solid fa-bullseye"></i> <!-- Bullseye ikon -->
+          </div> <!-- Slutter ikon wrapper -->
+          <h4 class="fw-bold text-primary">Vores Mission</h4> <!-- Mission titel -->
+          <p class="mt-2"> <!-- Mission tekst -->
+            At give studerende adgang til sparring, workshops, fællesskab <!-- Tekst -->
+            og praktiske værktøjer, så de kan udvikle deres projekter fra idé til handling. <!-- Tekst -->
+          </p> <!-- Slutter mission tekst -->
+        </div> <!-- Slutter mission kort -->
+      </div> <!-- Slutter mission kolonne -->
+
+    </div> <!-- Slutter row -->
+  </div> <!-- Slutter container -->
+</section> <!-- Slutter om os sektion -->
+
+<br> <!-- Luft -->
+<br> <!-- Luft -->
+<br> <!-- Luft -->
+
+<section class="py-5 bg-light pb-5 fade-in"> <!-- Lokationer sektion med lys baggrund -->
+  <div class="container"> <!-- Holder indholdet pænt -->
+
+    <div class="section-title mb-2 mt-5"> <!-- Titelblok -->
+      <h1 class="fw-bold text-primary">Vores lokationer</h1> <!-- Overskrift -->
+      <p class="mt-3"> <!-- Undertekst -->
+        Connected Starters har iværksættermiljøer tre steder på Zealand – hver med deres egen retning, <!-- Tekst -->
+        faciliteter og faglige partnerskaber. <!-- Tekst -->
+      </p> <!-- Slutter undertekst -->
+    </div> <!-- Slutter titelblok -->
+
+    <div class="row align-items-center g-5"> <!-- Grid række med alignment og gap -->
+
+      <div class="col-lg-6 text-center"> <!-- Venstre side: kort -->
+        <img src="images/Tegnebræt%201.svg" alt="Danmarkskort" class="img-fluid" style="max-width: 450px;"> <!-- SVG kort, responsivt og max bredde -->
+      </div> <!-- Slutter kort kolonne -->
+
+      <div class="col-lg-6"> <!-- Højre side: tekstbokse -->
+
+        <div class="p-4 mb-4 bg-white shadow-sm rounded"> <!-- Boks: Slagelse -->
+          <h5 class="fw-bold text-primary">Slagelse – Zealand Connect</h5> <!-- Titel -->
+          <p class="mb-0"> <!-- Tekst uden bund-margin -->
+            Et åbent og dynamisk iværksættermiljø med fokus på innovation, udvikling og tæt dialog med lokale virksomheder. <!-- Tekst -->
+            Perfekt for studerende, der vil arbejde praktisk og få hurtig feedback på deres idéer. <!-- Tekst -->
+          </p> <!-- Slutter tekst -->
+        </div> <!-- Slutter boks -->
+
+        <div class="p-4 mb-4 bg-white shadow-sm rounded"> <!-- Boks: Køge -->
+          <h5 class="fw-bold text-primary">Køge – Digital Innovationslab</h5> <!-- Titel -->
+          <p class="mb-0"> <!-- Tekst uden bund-margin -->
+            Et digitalt laboratorie med fokus på AI, teknologier og digital produktudvikling. Her kan du teste prototyper, <!-- Tekst -->
+            lære nye værktøjer og arbejde tværfagligt med andre studerende og virksomheder. <!-- Tekst -->
+          </p> <!-- Slutter tekst -->
+        </div> <!-- Slutter boks -->
+
+        <div class="p-4 bg-white shadow-sm rounded"> <!-- Boks: Næstved -->
+          <h5 class="fw-bold text-primary">Næstved – Bæredygtigt miljø</h5> <!-- Titel -->
+          <p class="mb-0"> <!-- Tekst uden bund-margin -->
+            Et stærkt fællesskab omkring bæredygtighed og cirkulær økonomi. Her kombineres designtænkning med lokale <!-- Tekst -->
+            aktører, så du kan udvikle projekter der gør en forskel. <!-- Tekst -->
+          </p> <!-- Slutter tekst -->
+        </div> <!-- Slutter boks -->
+
+      </div> <!-- Slutter højre kolonne -->
+    </div> <!-- Slutter row -->
+  </div> <!-- Slutter container -->
+
+  <br> <!-- Luft -->
+  <br> <!-- Luft -->
+  <br> <!-- Luft -->
+</section> <!-- Slutter lokationer sektion -->
+
+<footer class="mt-auto"> <!-- Footer nederst -->
+  <div class="container"> <!-- Holder footer indhold -->
+
+    <div class="row justify-content-between"> <!-- 3 kolonner med plads -->
+
+      <div class="col-md-4 mb-3"> <!-- Kolonne 1: Om os -->
+        <h5>Om os</h5> <!-- Titel -->
+        <p>Connected Starters er Zealands iværksættermiljø for studerende på tværs af uddannelser. Vi skaber rammerne for idéudvikling, sparring, workshops og netværk – så du kan udvikle dine projekter og styrke din vej mod iværksætteri.</p> <!-- Tekst -->
+      </div> <!-- Slutter kolonne -->
+
+      <div class="col-md-3 mb-3"> <!-- Kolonne 2: Genveje -->
+        <h5>Genveje</h5> <!-- Titel -->
+        <ul class="list-unstyled"> <!-- Liste uden bullets -->
+          <li><a href="workshop.html" class="text-decoration-none text-white">Workshop & Events</a></li> <!-- Link -->
+          <li><a href="tilmeld.html" class="text-decoration-none text-white">Tilmeld dig</a></li> <!-- Link -->
+          <li><a href="kontakt.html" class="text-decoration-none text-white">Kontakt</a></li> <!-- Link -->
+        </ul> <!-- Slutter liste -->
+      </div> <!-- Slutter kolonne -->
+
+      <div class="col-md-3 mb-3"> <!-- Kolonne 3: Sociale medier -->
+        <h5>Følg os</h5> <!-- Titel -->
+
+        <ul class="list-inline social-icons"> <!-- Inline liste for ikoner -->
+          <li class="list-inline-item"> <!-- Ikon 1 -->
+            <a href="https://www.facebook.com/" class="facebook text-white"> <!-- Facebook link -->
+              <i class="bi bi-facebook"></i> <!-- Facebook ikon -->
+            </a> <!-- Slutter link -->
+          </li> <!-- Slutter list item -->
+
+          <li class="list-inline-item"> <!-- Ikon 2 -->
+            <a href="https://www.instagram.com/" class="instagram text-white"> <!-- Instagram link -->
+              <i class="bi bi-instagram"></i> <!-- Instagram ikon -->
+            </a> <!-- Slutter link -->
+          </li> <!-- Slutter list item -->
+        </ul> <!-- Slutter icon liste -->
+
+        <img src="images/Zealandlogo.svg" alt="Zealand logo" class="logo w-50 mt-4"> <!-- Zealand logo i footer -->
+      </div> <!-- Slutter kolonne -->
+
+    </div> <!-- Slutter row -->
+
+    <hr class="mb-4"> <!-- Vandret linje -->
+
+    <div class="row"> <!-- Ny række -->
+      <div class="col-md-12 text-center"> <!-- En kolonne, centreret -->
+        <p>&copy; 2025 Connected Starters. All rights reserved.</p> <!-- Copyright -->
+      </div> <!-- Slutter kolonne -->
+    </div> <!-- Slutter row -->
+
+  </div> <!-- Slutter container -->
+</footer> <!-- Slutter footer -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script> <!-- Bootstrap JS (burger-menu osv.) -->
 
 <script>
-    const fadeElements = document.querySelectorAll('.fade-in');
 
-    // 👉 Fade første element ind automatisk (fx hero)
-    if (fadeElements.length > 0) {
-        setTimeout(() => {
-            fadeElements[0].classList.add('show');
-        }, 500);
-    }
+const fadeElements = document.querySelectorAll('.fade-in'); <!-- Finder alle elementer med class fade-in -->
 
-    // 👉 Observer til resten (scroll fade-in)
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('show');
-                observer.unobserve(entry.target); // fade-in kun én gang
-            }
-        });
-    }, {
-        threshold: 0.2
+// 👉 Fade første element ind automatisk (fx hero)
+if (fadeElements.length > 0) { <!-- Tjekker at der findes fade-elementer -->
+    setTimeout(() => { <!-- Venter 500ms før første show -->
+        fadeElements[0].classList.add('show'); <!-- Tilføjer class show til første element -->
+    }, 500); <!-- 500ms delay -->
+} <!-- Slutter if -->
+
+// 👉 Observer til resten (scroll fade-in)
+const observer = new IntersectionObserver((entries) => { <!-- Observer der ser hvornår elementer kommer på skærmen -->
+    entries.forEach(entry => { <!-- Går igennem alle observerede elementer -->
+        if (entry.isIntersecting) { <!-- Hvis elementet er synligt -->
+            entry.target.classList.add('show'); <!-- Tilføjer show -->
+            observer.unobserve(entry.target); <!-- Stopper med at observere det (så det kun sker 1 gang) -->
+        }
     });
+}, {
+    threshold: 0.2 <!-- 20% af elementet skal være synligt før animation starter -->
+});
 
-    fadeElements.forEach(el => observer.observe(el));
+fadeElements.forEach(el => observer.observe(el)); <!-- Sætter observer på hvert fade-element -->
 </script>
+
 </body>
 </html>
-

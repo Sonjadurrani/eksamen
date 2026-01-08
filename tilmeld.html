@@ -1,425 +1,429 @@
+<!DOCTYPE html> <!-- Fortæller browseren at dokumentet er HTML5 -->
 
-<!-- Hoved-HTML dokument for Connected Starters landingpage -->
-<html lang="da">
-<!-- SIDEHOVED: Meta-data, titler og stylesheet links -->
-<head>
-  <meta charset="utf-8">
+<!-- Hoved-HTML dokument for Connected Starters landingpage --> <!-- Kommentar: formålet med siden -->
+<html lang="da"> <!-- Starter HTML og sætter sprog til dansk -->
 
-  <title>Tilmeld dig</title>
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
+<!-- SIDEHOVED: Meta-data, titler og stylesheet links --> <!-- Kommentar: alt i head -->
+<head> <!-- Head starter -->
 
-  <meta name="description" content="Tilmeld dig Connected Starters og få adgang til sparring, workshops og et trygt iværksættermiljø for studerende på Zealand.">
-  <meta name="robots" content="index, follow">
-  <meta name="author" content="Sonja Durrani">
-  <meta name="copyright" content="© 2025 Sonja Durrani – Connected Starters">
+  <meta charset="utf-8"> <!-- Gør æ/ø/å korrekt -->
 
-  <!-- Link til eget stylesheet -->
-  <link href="css/styles.css" rel="stylesheet" type="text/css">
-  <!-- Bootstrap Icons -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-  <!-- Font Awesome (gammel version - anbefalet at fjerne hvis ikke brugt) -->
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
-  <!-- Font Awesome 6.5 (ikonpakke der bruges på siden) -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <title>Tilmeld dig</title> <!-- Titel i browser fanen -->
 
+  <link rel="icon" href="favicon.ico" type="image/x-icon"> <!-- Favicon (ikon i browser fanen) -->
 
+  <meta name="description" content="Tilmeld dig Connected Starters og få adgang til sparring, workshops og et trygt iværksættermiljø for studerende på Zealand."> <!-- SEO beskrivelse -->
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
+  <meta name="robots" content="index, follow"> <!-- Google må indeksere siden og følge links -->
+  <!--  <meta name="robots" content="noindex, nofollow">--> <!-- (Slået fra) ville forhindre Google i at indeksere -->
 
-<body>
+  <meta name="author" content="Sonja Durrani"> <!-- Forfatter -->
+  <meta name="copyright" content="© 2025 Sonja Durrani – Connected Starters"> <!-- Copyright -->
 
-<!-- NAVIGATIONSBAR: Topmenu med logo og links -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm fixed-top">
-  <div class="container">
-    <!-- Logo til venstre i navbar -->
-    <a class="navbar-brand logo" href="index.html">
-      <img src="images/logo1.svg" alt="Logo" width="auto" height="70" class="logo">
-    </a>
+  <!-- Link til eget stylesheet --> <!-- Kommentar -->
+  <link href="css/styles.css" rel="stylesheet" type="text/css"> <!-- Din CSS -->
 
-    <!-- Mobil-menu knap (hamburger ikon) -->
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav1">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+  <!-- Bootstrap Icons --> <!-- Kommentar -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"> <!-- Ikonpakke -->
 
-    <!-- Navigation links til højre -->
-    <div class="collapse navbar-collapse" id="navbarNav1">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item">
-          <a class="nav-link " href="services.html">Services</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="workshop.html">Workshop & Events</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="om.html">Om os</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="kontakt.html">Kontakt</a>
-        </li>
+  <!-- Font Awesome (gammel version - anbefalet at fjerne hvis ikke brugt) --> <!-- Kommentar -->
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet"> <!-- Font Awesome v4 -->
 
-        <li class="nav-item">
-          <a href="tilmeld.html" class="btn btn-outline-primary-pill fw-semibold ms-lg-3">
-            Tilmeld dig
-          </a>
-        </li>
+  <!-- Font Awesome 6.5 (ikonpakke der bruges på siden) --> <!-- Kommentar -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"> <!-- Font Awesome v6 -->
 
+  <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Gør siden responsiv på mobil -->
+</head> <!-- Head slutter -->
 
+<body> <!-- Body starter -->
 
-      </ul>
-    </div>
-  </div>
-</nav>
+<!-- NAVIGATIONSBAR: Topmenu med logo og links --> <!-- Kommentar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm fixed-top"> <!-- Bootstrap navbar (fast top) -->
+  <div class="container"> <!-- Begrænser bredden og giver padding -->
 
+    <!-- Logo til venstre i navbar --> <!-- Kommentar -->
+    <a class="navbar-brand logo" href="index.html"> <!-- Logo klikker til index -->
+      <img src="images/logo1.svg" alt="Logo" width="auto" height="70" class="logo"> <!-- Selve logoet -->
+    </a> <!-- Slutter logo link -->
 
+    <!-- Mobil-menu knap (hamburger ikon) --> <!-- Kommentar -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav1"> <!-- Burger knap -->
+      <span class="navbar-toggler-icon"></span> <!-- Burger ikon -->
+    </button> <!-- Slutter burger knap -->
 
+    <!-- Navigation links til højre --> <!-- Kommentar -->
+    <div class="collapse navbar-collapse" id="navbarNav1"> <!-- Collapsable menu -->
+      <ul class="navbar-nav ms-auto"> <!-- Menu til højre (ms-auto) -->
 
+        <li class="nav-item"> <!-- Menupunkt -->
+          <a class="nav-link " href="services.html">Services</a> <!-- Link -->
+        </li> <!-- Slutter menupunkt -->
 
+        <li class="nav-item"> <!-- Menupunkt -->
+          <a class="nav-link" href="workshop.html">Workshop & Events</a> <!-- Link -->
+        </li> <!-- Slutter menupunkt -->
 
+        <li class="nav-item"> <!-- Menupunkt -->
+          <a class="nav-link" href="om.html">Om os</a> <!-- Link -->
+        </li> <!-- Slutter menupunkt -->
 
-<!-- MAIN CONTENT -->
-<main class="pt-5 mt-4 mb-5">
+        <li class="nav-item"> <!-- Menupunkt -->
+          <a class="nav-link" href="kontakt.html">Kontakt</a> <!-- Link -->
+        </li> <!-- Slutter menupunkt -->
 
-  <!-- INTRO + FORM -->
-  <section class="container fade-in my-5 mb-5">
-    <div class="row g-5 align-items-start">
+        <li class="nav-item"> <!-- Menupunkt -->
+          <a href="tilmeld.html" class="btn btn-outline-primary-pill fw-semibold ms-lg-3"> <!-- CTA knap -->
+            Tilmeld dig <!-- Knap tekst -->
+          </a> <!-- Slutter knap -->
+        </li> <!-- Slutter menupunkt -->
 
-      <div class="col-lg-6">
-        <div class="section-title mb-4">
-          <h1 class="fw-bold text-primary">Tilmeld dig Connected Starters</h1>
-        </div>
+      </ul> <!-- Slutter menu-listen -->
+    </div> <!-- Slutter collapse -->
+  </div> <!-- Slutter container -->
+</nav> <!-- Slutter navbar -->
 
-        <p class="text-muted">
+<!-- MAIN CONTENT --> <!-- Kommentar: hovedindholdet på siden -->
+<main class="pt-5 mt-4 mb-5"> <!-- Main med top padding (pga fixed navbar) + margin -->
+
+  <!-- INTRO + FORM --> <!-- Kommentar -->
+  <section class="container fade-in my-5 mb-5"> <!-- Container + fade-in + margin y -->
+    <div class="row g-5 align-items-start"> <!-- Grid række med gap og top-align -->
+
+      <div class="col-lg-6"> <!-- Venstre kolonne -->
+        <div class="section-title mb-4"> <!-- Titelblok -->
+          <h1 class="fw-bold text-primary">Tilmeld dig Connected Starters</h1> <!-- Overskrift -->
+        </div> <!-- Slutter titelblok -->
+
+        <p class="text-muted"> <!-- Intro tekst -->
           Tag første skridt ind i et fællesskab, der støtter dig i at udvikle din idé – uanset hvor langt du er.
-        </p>
+        </p> <!-- Slutter paragraf -->
 
-        <ul class="text-muted">
-          <li>Få sparring på dine idéer</li>
-          <li>Mød andre studerende</li>
-          <li>Deltag i workshops og events</li>
-          <li>Start stille – også 1:1</li>
-        </ul>
-      </div>
+        <ul class="text-muted"> <!-- Liste med fordele -->
+          <li>Få sparring på dine idéer</li> <!-- Punkt 1 -->
+          <li>Mød andre studerende</li> <!-- Punkt 2 -->
+          <li>Deltag i workshops og events</li> <!-- Punkt 3 -->
+          <li>Start stille – også 1:1</li> <!-- Punkt 4 -->
+        </ul> <!-- Slutter liste -->
+      </div> <!-- Slutter venstre kolonne -->
 
-      <div class="col-lg-6">
-        <div class="p-4 bg-light rounded shadow-sm">
-          <form>
-            <div class="mb-3">
-              <label class="form-label">Navn</label>
-              <input type="text" class="form-control" placeholder="Dit fulde navn">
-            </div>
+      <div class="col-lg-6"> <!-- Højre kolonne -->
+        <div class="p-4 bg-light rounded shadow-sm"> <!-- Form-kort: padding + lys + rund + skygge -->
+          <form> <!-- Starter form (ingen action endnu) -->
 
-            <div class="mb-3">
-              <label class="form-label">Studie & campus</label>
-              <input type="text" class="form-control" placeholder="Fx Multimediedesign, Køge">
-            </div>
+            <div class="mb-3"> <!-- Feltgruppe -->
+              <label class="form-label">Navn</label> <!-- Label -->
+              <input type="text" class="form-control" placeholder="Dit fulde navn"> <!-- Input -->
+            </div> <!-- Slutter feltgruppe -->
 
-            <div class="mb-3">
-              <label class="form-label">E-mail</label>
-              <input type="email" class="form-control" placeholder="din@email.dk">
-            </div>
+            <div class="mb-3"> <!-- Feltgruppe -->
+              <label class="form-label">Studie & campus</label> <!-- Label -->
+              <input type="text" class="form-control" placeholder="Fx Multimediedesign, Køge"> <!-- Input -->
+            </div> <!-- Slutter feltgruppe -->
 
-            <div class="mb-4">
-              <label class="form-label">Din idé (valgfrit)</label>
-              <textarea class="form-control" rows="3"></textarea>
-            </div>
+            <div class="mb-3"> <!-- Feltgruppe -->
+              <label class="form-label">E-mail</label> <!-- Label -->
+              <input type="email" class="form-control" placeholder="din@email.dk"> <!-- Email input -->
+            </div> <!-- Slutter feltgruppe -->
 
-            <button class="btn cta-btn-2 w-100 rounded-pill fw-semibold">
-              Tilmeld mig
-            </button>
-          </form>
-        </div>
-      </div>
+            <div class="mb-4"> <!-- Feltgruppe -->
+              <label class="form-label">Din idé (valgfrit)</label> <!-- Label -->
+              <textarea class="form-control" rows="3"></textarea> <!-- Tekstfelt -->
+            </div> <!-- Slutter feltgruppe -->
 
-    </div>
-  </section>
-</main>
-<br>
-  <br>
+            <button class="btn cta-btn-2 w-100 rounded-pill fw-semibold"> <!-- Knap: full width + rund -->
+              Tilmeld mig <!-- Knap tekst -->
+            </button> <!-- Slutter knap -->
 
-  <!-- 1:1 SECTION – KORREKT -->
-  <section class="py-5 bg-primary text-white mt-5 mb-5 fade-in">
-    <div class="container">
-      <h4 class="fw-bold">Vil du hellere starte 1:1?</h4>
-      <p class="mb-3">
-        Ikke alle føler sig klar til workshops med det samme.
-        Book en fortrolig online samtale og få personlig sparring.
-      </p>
-      <a href="#" class="btn bg-secondary text-black rounded-pill px-5 py-3 fw-semibold">
-        Book en Zoom-samtale
-      </a>
-    </div>
-  </section>
+          </form> <!-- Slutter form -->
+        </div> <!-- Slutter form-kort -->
+      </div> <!-- Slutter højre kolonne -->
 
+    </div> <!-- Slutter row -->
+  </section> <!-- Slutter sektion -->
+</main> <!-- Slutter main -->
 
+<br> <!-- Luft -->
+<br> <!-- Luft -->
 
-<br>
+<!-- 1:1 SECTION – KORREKT --> <!-- Kommentar -->
+<section class="py-5 bg-primary text-white mt-5 mb-5 fade-in"> <!-- Blå sektion med fade-in -->
+  <div class="container"> <!-- Indhold centreret -->
+    <h4 class="fw-bold">Vil du hellere starte 1:1?</h4> <!-- Overskrift -->
+    <p class="mb-3"> <!-- Tekst -->
+      Ikke alle føler sig klar til workshops med det samme.
+      Book en fortrolig online samtale og få personlig sparring.
+    </p> <!-- Slutter tekst -->
+    <a href="#" class="btn bg-secondary text-black rounded-pill px-5 py-3 fw-semibold"> <!-- CTA knap -->
+      Book en Zoom-samtale <!-- Tekst -->
+    </a> <!-- Slutter knap -->
+  </div> <!-- Slutter container -->
+</section> <!-- Slutter 1:1 sektion -->
 
+<br> <!-- Luft -->
 
-<section class="py-5 mb-5 fade-in">
-  <div class="container">
-    <div class="row justify-content-center text-center mx-1">
-      <div class="col-lg-8 col-xl-7 ">
-        <h2 class="display-5 fw-bold text-primary">Ofte stillede spørgsmål inden tilmelding</h2>
-        <p class="mb-4">
+<section class="py-5 mb-5 fade-in"> <!-- FAQ sektion med padding + fade-in -->
+  <div class="container"> <!-- Holder bredden -->
+
+    <div class="row justify-content-center text-center mx-1"> <!-- Centeret række -->
+      <div class="col-lg-8 col-xl-7 "> <!-- Bredde på titel -->
+        <h2 class="display-5 fw-bold text-primary">Ofte stillede spørgsmål inden tilmelding</h2> <!-- Titel -->
+        <p class="mb-4"> <!-- Intro tekst -->
           Her finder du svar på de mest almindelige spørgsmål, så du trygt kan tilmelde dig Connected Starters.
-        </p>
-      </div>
-    </div>
+        </p> <!-- Slutter tekst -->
+      </div> <!-- Slutter kolonne -->
+    </div> <!-- Slutter række -->
 
-    <div class="row justify-content-center">
-      <div class="col-md-10">
-        <div class="row g-3 g-md-4 align-items-stretch mx-2">
+    <div class="row justify-content-center"> <!-- Centeret indhold -->
+      <div class="col-md-10"> <!-- Begrænset bredde -->
+        <div class="row g-3 g-md-4 align-items-stretch mx-2"> <!-- Grid til cards -->
 
-          <!-- FAQ 1 -->
-          <div class="col-lg-6">
-            <div class="card bg-light p-4 h-100">
-              <div class="d-flex">
-                <div class="text-primary me-4 fs-3">
-                  <i class="fa-solid fa-circle-question"></i>
-                </div>
-                <div>
-                  <h5 class="mb-2 mb-lg-4 fw-bold">
+          <!-- FAQ 1 --> <!-- Kommentar -->
+          <div class="col-lg-6"> <!-- Halv på desktop -->
+            <div class="card bg-light p-4 h-100"> <!-- Card -->
+              <div class="d-flex"> <!-- Flex layout -->
+                <div class="text-primary me-4 fs-3"> <!-- Ikon-kolonne -->
+                  <i class="fa-solid fa-circle-question"></i> <!-- Ikon -->
+                </div> <!-- Slutter ikon -->
+                <div> <!-- Tekstkolonne -->
+                  <h5 class="mb-2 mb-lg-4 fw-bold"> <!-- Spørgsmål -->
                     Hvad sker der, efter du har tilmeldt dig?
-                  </h5>
-                  <p class="m-0">
+                  </h5> <!-- Slutter spørgsmål -->
+                  <p class="m-0"> <!-- Svar -->
                     Når du har tilmeldt dig, bliver du kontaktet med information om næste skridt.
                     Det kan være invitationer til workshops, mulighed for 1:1-samtale eller generel information.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
+                  </p> <!-- Slutter svar -->
+                </div> <!-- Slutter tekstkolonne -->
+              </div> <!-- Slutter flex -->
+            </div> <!-- Slutter card -->
+          </div> <!-- Slutter kolonne -->
 
-          <!-- FAQ 2 -->
-          <div class="col-lg-6">
-            <div class="card bg-light p-4 h-100">
-              <div class="d-flex">
-                <div class="text-primary me-4 fs-3">
-                  <i class="fa-solid fa-lightbulb"></i>
-                </div>
-                <div>
-                  <h5 class="mb-2 mb-lg-4 fw-bold">
+          <!-- FAQ 2 --> <!-- Kommentar -->
+          <div class="col-lg-6"> <!-- Halv på desktop -->
+            <div class="card bg-light p-4 h-100"> <!-- Card -->
+              <div class="d-flex"> <!-- Flex -->
+                <div class="text-primary me-4 fs-3"> <!-- Ikon -->
+                  <i class="fa-solid fa-lightbulb"></i> <!-- Ikon -->
+                </div> <!-- Slutter ikon -->
+                <div> <!-- Tekst -->
+                  <h5 class="mb-2 mb-lg-4 fw-bold"> <!-- Spørgsmål -->
                     Skal jeg have en færdig idé for at deltage?
-                  </h5>
-                  <p class="m-0">
+                  </h5> <!-- Slutter spørgsmål -->
+                  <p class="m-0"> <!-- Svar -->
                     Nej. Du kan sagtens deltage med en løs idé eller bare en nysgerrighed.
                     Connected Starters er netop for dig, der vil udforske muligheder.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
+                  </p> <!-- Slutter svar -->
+                </div> <!-- Slutter tekst -->
+              </div> <!-- Slutter flex -->
+            </div> <!-- Slutter card -->
+          </div> <!-- Slutter kolonne -->
 
-          <!-- FAQ 3 -->
-          <div class="col-lg-6">
-            <div class="card bg-light p-4 h-100">
-              <div class="d-flex">
-                <div class="text-primary me-4 fs-3">
-                  <i class="fa-solid fa-people-group"></i>
-                </div>
-                <div>
-                  <h5 class="mb-2 mb-lg-4 fw-bold">
+          <!-- FAQ 3 --> <!-- Kommentar -->
+          <div class="col-lg-6"> <!-- Kolonne -->
+            <div class="card bg-light p-4 h-100"> <!-- Card -->
+              <div class="d-flex"> <!-- Flex -->
+                <div class="text-primary me-4 fs-3"> <!-- Ikon -->
+                  <i class="fa-solid fa-people-group"></i> <!-- Ikon -->
+                </div> <!-- Slutter ikon -->
+                <div> <!-- Tekst -->
+                  <h5 class="mb-2 mb-lg-4 fw-bold"> <!-- Spørgsmål -->
                     Er det obligatorisk at deltage i workshops?
-                  </h5>
-                  <p class="m-0">
+                  </h5> <!-- Slutter spørgsmål -->
+                  <p class="m-0"> <!-- Svar -->
                     Nej. Du vælger selv, hvor meget du vil deltage.
                     Nogle starter med 1:1-sparring, andre med workshops.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
+                  </p> <!-- Slutter svar -->
+                </div> <!-- Slutter tekst -->
+              </div> <!-- Slutter flex -->
+            </div> <!-- Slutter card -->
+          </div> <!-- Slutter kolonne -->
 
-          <!-- FAQ 4 -->
-          <div class="col-lg-6">
-            <div class="card bg-light p-4 h-100">
-              <div class="d-flex">
-                <div class="text-primary me-4 fs-3">
-                  <i class="fa-solid fa-wallet"></i>
-                </div>
-                <div>
-                  <h5 class="mb-2 mb-lg-4 fw-bold">
+          <!-- FAQ 4 --> <!-- Kommentar -->
+          <div class="col-lg-6"> <!-- Kolonne -->
+            <div class="card bg-light p-4 h-100"> <!-- Card -->
+              <div class="d-flex"> <!-- Flex -->
+                <div class="text-primary me-4 fs-3"> <!-- Ikon -->
+                  <i class="fa-solid fa-wallet"></i> <!-- Ikon -->
+                </div> <!-- Slutter ikon -->
+                <div> <!-- Tekst -->
+                  <h5 class="mb-2 mb-lg-4 fw-bold"> <!-- Spørgsmål -->
                     Koster det noget at deltage?
-                  </h5>
-                  <p class="m-0">
+                  </h5> <!-- Slutter spørgsmål -->
+                  <p class="m-0"> <!-- Svar -->
                     Nej. Connected Starters er et gratis tilbud for studerende i region Sjælland.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
+                  </p> <!-- Slutter svar -->
+                </div> <!-- Slutter tekst -->
+              </div> <!-- Slutter flex -->
+            </div> <!-- Slutter card -->
+          </div> <!-- Slutter kolonne -->
 
-          <!-- FAQ 5 -->
-          <div class="col-lg-6">
-            <div class="card bg-light p-4 h-100">
-              <div class="d-flex">
-                <div class="text-primary me-4 fs-3">
-                  <i class="fa-solid fa-comments"></i>
-                </div>
-                <div>
-                  <h5 class="mb-2 mb-lg-4 fw-bold">
+          <!-- FAQ 5 --> <!-- Kommentar -->
+          <div class="col-lg-6"> <!-- Kolonne -->
+            <div class="card bg-light p-4 h-100"> <!-- Card -->
+              <div class="d-flex"> <!-- Flex -->
+                <div class="text-primary me-4 fs-3"> <!-- Ikon -->
+                  <i class="fa-solid fa-comments"></i> <!-- Ikon -->
+                </div> <!-- Slutter ikon -->
+                <div> <!-- Tekst -->
+                  <h5 class="mb-2 mb-lg-4 fw-bold"> <!-- Spørgsmål -->
                     Kan jeg starte med 1:1-sparring?
-                  </h5>
-                  <p class="m-0">
+                  </h5> <!-- Slutter spørgsmål -->
+                  <p class="m-0"> <!-- Svar -->
                     Ja. Hvis du foretrækker en rolig og personlig start,
                     kan du booke en 1:1-samtale og tage det i dit eget tempo.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
+                  </p> <!-- Slutter svar -->
+                </div> <!-- Slutter tekst -->
+              </div> <!-- Slutter flex -->
+            </div> <!-- Slutter card -->
+          </div> <!-- Slutter kolonne -->
 
-          <!-- FAQ 6 -->
-          <div class="col-lg-6">
-            <div class="card bg-light p-4 h-100">
-              <div class="d-flex">
-                <div class="text-primary me-4 fs-3">
-                  <i class="fa-solid fa-user-graduate"></i>
-                </div>
-                <div>
-                  <h5 class="mb-2 mb-lg-4 fw-bold">
+          <!-- FAQ 6 --> <!-- Kommentar -->
+          <div class="col-lg-6"> <!-- Kolonne -->
+            <div class="card bg-light p-4 h-100"> <!-- Card -->
+              <div class="d-flex"> <!-- Flex -->
+                <div class="text-primary me-4 fs-3"> <!-- Ikon -->
+                  <i class="fa-solid fa-user-graduate"></i> <!-- Ikon -->
+                </div> <!-- Slutter ikon -->
+                <div> <!-- Tekst -->
+                  <h5 class="mb-2 mb-lg-4 fw-bold"> <!-- Spørgsmål -->
                     Hvem kan tilmelde sig?
-                  </h5>
-                  <p class="m-0">
+                  </h5> <!-- Slutter spørgsmål -->
+                  <p class="m-0"> <!-- Svar -->
                     Alle studerende i region Sjælland – uanset studie, erfaring eller ambitionsniveau.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
+                  </p> <!-- Slutter svar -->
+                </div> <!-- Slutter tekst -->
+              </div> <!-- Slutter flex -->
+            </div> <!-- Slutter card -->
+          </div> <!-- Slutter kolonne -->
 
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+        </div> <!-- Slutter FAQ grid -->
+      </div> <!-- Slutter col-md-10 -->
+    </div> <!-- Slutter row -->
 
+  </div> <!-- Slutter container -->
+</section> <!-- Slutter FAQ sektion -->
 
+<!-- LOKATIONER: Viser de 3 campusmiljøer --> <!-- Kommentar -->
+<section class="py-5 bg-light text-primary fade-in"> <!-- Lokation-sektion -->
+  <div class="container text-center"> <!-- Centeret indhold -->
+    <h2 class="fw-bold mb-4">Vores lokationer</h2> <!-- Overskrift -->
+    <div class="row g-4"> <!-- Grid -->
 
-  <!-- LOKATIONER: Viser de 3 campusmiljøer -->
-  <section class="py-5 bg-light text-primary fade-in">
-    <div class="container text-center">
-      <h2 class="fw-bold mb-4">Vores lokationer</h2>
-      <div class="row g-4">
+      <!-- Kort med information om lokation --> <!-- Kommentar -->
+      <div class="col-md-4"> <!-- Kolonne -->
+        <div class="p-4 shadow-sm rounded bg-white h-100"> <!-- Card -->
+          <h5 class="fw-bold">Slagelse</h5> <!-- Titel -->
+          <p>Zealand Connect - åbent og dynamisk iværksættermiljø.</p> <!-- Tekst -->
+        </div> <!-- Slutter card -->
+      </div> <!-- Slutter kolonne -->
 
-        <!-- Kort med information om lokation -->
-        <div class="col-md-4">
-          <div class="p-4 shadow-sm rounded bg-white h-100">
-            <h5 class="fw-bold">Slagelse</h5>
-            <p>Zealand Connect - åbent og dynamisk iværksættermiljø.</p>
-          </div>
-        </div>
+      <!-- Kort med information om lokation --> <!-- Kommentar -->
+      <div class="col-md-4"> <!-- Kolonne -->
+        <div class="p-4 shadow-sm rounded bg-white h-100"> <!-- Card -->
+          <h5 class="fw-bold">Køge</h5> <!-- Titel -->
+          <p>Digital Innovationslab - fokus på digital produktudvikling.</p> <!-- Tekst -->
+        </div> <!-- Slutter card -->
+      </div> <!-- Slutter kolonne -->
 
-        <!-- Kort med information om lokation -->
-        <div class="col-md-4">
-          <div class="p-4 shadow-sm rounded bg-white h-100">
-            <h5 class="fw-bold">Køge</h5>
-            <p>Digital Innovationslab - fokus på digital produktudvikling.</p>
-          </div>
-        </div>
+      <!-- Kort med information om lokation --> <!-- Kommentar -->
+      <div class="col-md-4"> <!-- Kolonne -->
+        <div class="p-4 shadow-sm rounded bg-white h-100"> <!-- Card -->
+          <h5 class="fw-bold">Næstved</h5> <!-- Titel -->
+          <p>Bæredygtige løsninger og tværfaglige samarbejder.</p> <!-- Tekst -->
+        </div> <!-- Slutter card -->
+      </div> <!-- Slutter kolonne -->
 
-        <!-- Kort med information om lokation -->
-        <div class="col-md-4">
-          <div class="p-4 shadow-sm rounded bg-white h-100">
-            <h5 class="fw-bold">Næstved</h5>
-            <p>Bæredygtige løsninger og tværfaglige samarbejder.</p>
-          </div>
-        </div>
+    </div> <!-- Slutter row -->
+  </div> <!-- Slutter container -->
 
-      </div>
-    </div>
-    <br>
-    <br>
-    <br>
+  <br> <!-- Luft -->
+  <br> <!-- Luft -->
+  <br> <!-- Luft -->
+</section> <!-- Slutter lokationer -->
 
-  </section>
+<!-- FOOTER: 3 kolonner med info, genveje og sociale medier --> <!-- Kommentar -->
+<footer class="mt-auto"> <!-- Footer -->
+  <div class="container"> <!-- Container -->
 
+    <div class="row justify-content-between"> <!-- Række -->
 
+      <!-- Om os sektion --> <!-- Kommentar -->
+      <div class="col-md-4 mb-3"> <!-- Kolonne -->
+        <h5>Om os</h5> <!-- Titel -->
+        <p>Connected Starters er Zealands iværksættermiljø for studerende på tværs af uddannelser. Vi skaber rammerne for idéudvikling, sparring, workshops og netværk – så du kan udvikle dine projekter og styrke din vej mod iværksætteri.</p> <!-- Tekst -->
+      </div> <!-- Slutter kolonne -->
 
+      <!-- Genveje sektion --> <!-- Kommentar -->
+      <div class="col-md-3 mb-3"> <!-- Kolonne -->
+        <h5>Genveje</h5> <!-- Titel -->
+        <ul class="list-unstyled"> <!-- Liste -->
+          <li><a href="workshop.html" class="text-decoration-none text-white">Workshop & Events</a></li> <!-- Link -->
+          <li><a href="tilmeld.html" class="text-decoration-none text-white">Tilmeld dig</a></li> <!-- Link -->
+          <li><a href="kontakt.html" class="text-decoration-none text-white">Kontakt</a></li> <!-- Link -->
+        </ul> <!-- Slutter liste -->
+      </div> <!-- Slutter kolonne -->
 
+      <!-- Sociale medier sektion --> <!-- Kommentar -->
+      <div class="col-md-3 mb-3"> <!-- Kolonne -->
+        <h5>Følg os</h5> <!-- Titel -->
 
+        <ul class="list-inline social-icons"> <!-- Ikonliste -->
+          <li class="list-inline-item"> <!-- Facebook -->
+            <a href="https://www.facebook.com/" class="facebook text-white"> <!-- Link -->
+              <i class="bi bi-facebook"></i> <!-- Ikon -->
+            </a> <!-- Slutter link -->
+          </li> <!-- Slutter item -->
 
-<!-- FOOTER: 3 kolonner med info, genveje og sociale medier -->
-<footer class="mt-auto">
-  <div class="container">
-    <div class="row justify-content-between">
-      <!-- Om os sektion -->
-      <div class="col-md-4 mb-3">
-        <h5>Om os</h5>
-        <p>Connected Starters er Zealands iværksættermiljø for studerende på tværs af uddannelser. Vi skaber rammerne for idéudvikling, sparring, workshops og netværk – så du kan udvikle dine projekter og styrke din vej mod iværksætteri.</p>
-      </div>
+          <li class="list-inline-item"> <!-- Instagram -->
+            <a href="https://www.instagram.com/" class="instagram text-white"> <!-- Link -->
+              <i class="bi bi-instagram"></i> <!-- Ikon -->
+            </a> <!-- Slutter link -->
+          </li> <!-- Slutter item -->
+        </ul> <!-- Slutter liste -->
 
-      <!-- Genveje sektion -->
-      <div class="col-md-3 mb-3">
-        <h5>Genveje</h5>
-        <ul class="list-unstyled">
-          <li><a href="workshop.html" class="text-decoration-none text-white">Workshop & Events</a></li>
-          <li><a href="tilmeld.html" class="text-decoration-none text-white">Tilmeld dig</a></li>
-          <li><a href="kontakt.html" class="text-decoration-none text-white">Kontakt</a></li>
-        </ul>
-      </div>
+        <!-- Logo SKAL ligge udenfor ul --> <!-- Kommentar -->
+        <img src="images/Zealandlogo.svg" alt="Zealand logo" class="logo w-50 mt-4"> <!-- Logo -->
+      </div> <!-- Slutter kolonne -->
 
-      <!-- Sociale medier sektion -->
-      <div class="col-md-3 mb-3">
-        <h5>Følg os</h5>
+    </div> <!-- Slutter row -->
 
-        <ul class="list-inline social-icons">
-          <li class="list-inline-item">
-            <a href="https://www.facebook.com/" class="facebook text-white">
-              <i class="bi bi-facebook"></i>
-            </a>
-          </li>
+    <hr class="mb-4"> <!-- Streg -->
 
-          <li class="list-inline-item">
-            <a href="https://www.instagram.com/" class="instagram text-white">
-              <i class="bi bi-instagram"></i>
-            </a>
-          </li>
-        </ul>
+    <!-- Copyright nederst --> <!-- Kommentar -->
+    <div class="row"> <!-- Række -->
+      <div class="col-md-12 text-center"> <!-- Kolonne -->
+        <p>&copy; 2026 Connected Starters. All rights reserved.</p> <!-- Tekst -->
+      </div> <!-- Slutter kolonne -->
+    </div> <!-- Slutter row -->
 
-        <!-- Logo SKAL ligge udenfor ul -->
-        <img src="images/Zealandlogo.svg" alt="Zealand logo" class="logo w-50 mt-4">
-      </div>
-    </div>
+  </div> <!-- Slutter container -->
+</footer> <!-- Slutter footer -->
 
-    <hr class="mb-4">
-
-    <!-- Copyright nederst -->
-    <div class="row">
-      <div class="col-md-12 text-center">
-        <p>&copy; 2025 Connected Starters. All rights reserved.</p>
-      </div>
-    </div>
-  </div>
-</footer>
-
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script> <!-- Bootstrap JS -->
 
 <script>
-    const fadeElements = document.querySelectorAll('.fade-in');
+const fadeElements = document.querySelectorAll('.fade-in'); <!-- Finder alle fade-in elementer -->
 
-    // 👉 Fade første element ind automatisk (fx hero)
-    if (fadeElements.length > 0) {
-        setTimeout(() => {
-            fadeElements[0].classList.add('show');
-        }, 500);
-    }
+// 👉 Fade første element ind automatisk (fx hero) <!-- Kommentar -->
+if (fadeElements.length > 0) { <!-- Hvis der findes elementer -->
+    setTimeout(() => { <!-- Vent lidt -->
+        fadeElements[0].classList.add('show'); <!-- Vis første element -->
+    }, 500); <!-- Vent 500ms -->
+} <!-- Slutter if -->
 
-    // 👉 Observer til resten (scroll fade-in)
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('show');
-                observer.unobserve(entry.target); // fade-in kun én gang
-            }
-        });
-    }, {
-        threshold: 0.2
-    });
+// 👉 Observer til resten (scroll fade-in) <!-- Kommentar -->
+const observer = new IntersectionObserver((entries) => { <!-- Observer -->
+    entries.forEach(entry => { <!-- Loop -->
+        if (entry.isIntersecting) { <!-- Hvis element er synligt -->
+            entry.target.classList.add('show'); <!-- Tilføj show -->
+            observer.unobserve(entry.target); <!-- Gør det kun én gang -->
+        } <!-- Slutter if -->
+    }); <!-- Slutter loop -->
+}, { <!-- Options -->
+    threshold: 0.2 <!-- 20% synlig før den aktiverer -->
+}); <!-- Slutter observer -->
 
-    fadeElements.forEach(el => observer.observe(el));
-</script>
-</body>
-</html>
+fadeElements.forEach(el => observer.observe(el)); <!-- Observer alle fade-in -->
+</script> <!-- Slutter JS -->
+
+</body> <!-- Slutter body -->
+</html> <!-- Slutter HTML -->

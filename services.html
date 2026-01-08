@@ -1,70 +1,73 @@
+<!DOCTYPE html> <!-- Fortæller browseren at dette er HTML5 -->
+<html lang="da"> <!-- Starter HTML-dokumentet + sprog er dansk -->
 
-<!-- Hoved-HTML dokument for Connected Starters landingpage -->
-<html lang="da" xmlns="http://www.w3.org/1999/html">
-<!-- SIDEHOVED: Meta-data, titler og stylesheet links -->
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8"> <!-- Gør at danske bogstaver (æøå) virker korrekt -->
 
   <title>Services</title>
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
-
-  <meta name="description" content="Se hvilke services Connected Starters tilbyder studerende: idéudvikling, workshops og 1:1 sparring i trygge rammer – uanset hvor langt du er.">
-  <meta name="robots" content="index, follow">
-  <meta name="author" content="Sonja Durrani">
-  <meta name="copyright" content="© 2025 Sonja Durrani – Connected Starters">
-
-  <!-- Link til eget stylesheet -->
-  <link href="css/styles.css" rel="stylesheet" type="text/css">
-  <!-- Bootstrap Icons -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-  <!-- Font Awesome (gammel version - anbefalet at fjerne hvis ikke brugt) -->
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
-  <!-- Font Awesome 6.5 (ikonpakke der bruges på siden) -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 
+  <link rel="icon" href="/favicon.ico" type="image/x-icon"> <!-- Standard favicon -->
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"> <!-- Ekstra støtte til ældre browsere -->
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
+
+  <meta name="description" content="Se Connected Starters’ services: idéudvikling, workshops og 1:1 sparring for studerende på Zealand.">
+
+  <meta name="robots" content="index, follow"> <!-- Google må indeksere siden -->
+  <!-- <meta name="robots" content="noindex, nofollow"> --> <!-- Bruges kun hvis siden IKKE må indekseres -->
+
+  <meta name="author" content="Sonja Durrani"> <!-- Hvem der har lavet siden -->
+  <meta name="copyright" content="© 2025 Sonja Durrani – Connected Starters"> <!-- Copyright-linje -->
+
+  <!-- Bootstrap CSS (vigtigt for container/row/col osv.) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"> <
+
+
+  <link href="css/styles.css" rel="stylesheet" type="text/css"> <!-- Din CSS -->
+
+  <!-- Ikoner -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"> <!-- Bootstrap icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"> <!-- Font Awesome -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Responsivt layout -->
+</head> <!-- Head slutter -->
 
 <body>
 
-<!-- NAVIGATIONSBAR: Topmenu med logo og links -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm fixed-top">
-  <div class="container">
-    <!-- Logo til venstre i navbar -->
-    <a class="navbar-brand logo" href="index.html">
-      <img src="images/logo1.svg" alt="Logo" width="auto" height="70" class="logo">
-    </a>
 
-    <!-- Mobil-menu knap (hamburger ikon) -->
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav1">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm fixed-top"> <!-- Navbar: responsiv + lys + fast i toppen -->
+  <div class="container"> <!-- Holder indholdet pænt i midten -->
 
-    <!-- Navigation links til højre -->
-    <div class="collapse navbar-collapse" id="navbarNav1">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item">
-          <a class="nav-link active" href="services.html">Services</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="workshop.html">Workshop & Events</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="om.html">Om os</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="kontakt.html">Kontakt</a>
+    <a class="navbar-brand logo" href="index.html"> <!-- Klik på logo -> tilbage til forsiden -->
+      <img src="images/logo1.svg" alt="Logo" width="auto" height="70" class="logo"> <!-- Dit logo-billede -->
+    </a> <!-- Slutter logo-link -->
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav1"> <!-- Burger-menu på mobil -->
+      <span class="navbar-toggler-icon"></span> <!-- Selve burger-ikonet -->
+    </button> <!-- Slutter burger-knap -->
+
+    <div class="collapse navbar-collapse" id="navbarNav1"> <!-- Collapsable menu (åbner/lukker på mobil) -->
+      <ul class="navbar-nav ms-auto"> <!-- Nav-liste + skubber til højre (ms-auto) -->
+
+        <li class="nav-item"> <!-- Menupunkt -->
+          <a class="nav-link active" href="services.html">Services</a> <!-- Aktuel side -->
         </li>
 
-        <li class="nav-item">
-          <a href="tilmeld.html" class="btn btn-outline-primary-pill fw-semibold ms-lg-3">
-            Tilmeld dig
-          </a>
-        </li>
+        <li class="nav-item"> <!-- Menupunkt -->
+          <a class="nav-link" href="workshop.html">Workshop & Events</a> <!-- Link -->
+        </li> <!-- Slutter menupunkt -->
 
+        <li class="nav-item"> <!-- Menupunkt -->
+          <a class="nav-link" href="om.html">Om os</a> <!-- Link -->
+        </li> <!-- Slutter menupunkt -->
 
+        <li class="nav-item"> <!-- Menupunkt -->
+          <a class="nav-link" href="kontakt.html">Kontakt</a> <!-- Link -->
+        </li> <!-- Slutter menupunkt -->
+
+        <li class="nav-item"> <!-- Menupunkt -->
+          <a href="tilmeld.html" class="btn btn-outline-primary-pill fw-semibold ms-lg-3">Tilmeld dig</a> <!-- CTA-knap -->
+        </li> <!-- Slutter menupunkt -->
 
       </ul>
     </div>
@@ -72,143 +75,131 @@
 </nav>
 
 
+<div class="container py-5"> <!-- Container + padding top/bottom -->
+  <div class="row g-4"> <!-- Row + gap mellem kolonner -->
+
+    <div class="section-title mb-4 mt-4"> <!-- Titel-område + margin -->
+      <h1 class="fw-bold text-primary">Services</h1> <!-- Overskrift -->
+    </div> <!-- Slutter titel-område -->
 
 
-
-<div class="container py-5">
-  <div class="row g-4">
-
-    <div class="section-title mb-4 mt-4">
-      <h1 class="fw-bold text-primary">Services</h1>
-    </div>
 
     <!-- Service 1 -->
-    <div class="col-md-4">
-      <div class="service-card hover-lift">
-        <div class="service-card-inner">
-          <div class="service-card-front">
-            <div class="icon-wrapper">
-              <i class="fa-solid fa-lightbulb fa-2x"></i>
-            </div>
-            <h3 class="h4 mb-2 fw-semibold">Idéudvikling</h3>
-            <p class="text-center mb-0">
-              Få hjælp til at forme og udvikle dine idéer
-            </p>
-          </div>
-          <div class="service-card-back">
-            <h4 class="mb-3 text-primary">Hvad du får</h4>
-            <ul class="feature-list">
+    <div class="col-md-4"> <!-- 3 kolonner på desktop (4+4+4) -->
+      <div class="service-card hover-lift"> <!-- Card wrapper + hover animation -->
+        <div class="service-card-inner"> <!-- Inderste wrapper til flip-effekt -->
+          <div class="service-card-front"> <!-- Forside af flip-card -->
+            <div class="icon-wrapper"> <!-- Cirkelformet ikonholder -->
+              <i class="fa-solid fa-lightbulb fa-2x"></i> <!-- Pære-ikon -->
+            </div> <!-- Slutter ikonholder -->
+            <h3 class="h4 mb-2 fw-semibold">Idéudvikling</h3> <!-- Titel -->
+            <p class="text-center mb-0">Få hjælp til at forme og udvikle dine idéer</p> <!-- Kort tekst -->
+          </div> <!-- Slutter forside -->
+
+          <div class="service-card-back"> <!-- Bagside af flip-card -->
+            <h4 class="mb-3 text-primary">Hvad du får</h4> <!-- Bagside titel -->
+            <ul class="feature-list"> <!-- Liste -->
               <li>Idégenerering</li>
               <li>Konceptudvikling</li>
               <li>Feedback & refleksion</li>
             </ul>
-            <a href="#ideudvikling" class="btn btn-primary mt-4">
-              Læs mere
-            </a>
+            <a href="#ideudvikling" class="btn btn-primary mt-4">Læs mere</a> <!-- Scroll til sektion -->
           </div>
         </div>
       </div>
     </div>
 
     <!-- Service 2 -->
-    <div class="col-md-4">
-      <div class="service-card hover-lift">
-        <div class="service-card-inner">
-          <div class="service-card-front">
-            <div class="icon-wrapper">
-              <i class="fa-solid fa-people-group fa-2x"></i>
-            </div>
-            <h3 class="h4 mb-2 fw-semibold">Workshops</h3>
-            <p class="text-center mb-0">
-              Praktiske forløb med andre studerende
-            </p>
+    <div class="col-md-4"> <!-- Kolonne -->
+      <div class="service-card hover-lift"> <!-- Card -->
+        <div class="service-card-inner"> <!-- Inner -->
+          <div class="service-card-front"> <!-- Forside -->
+            <div class="icon-wrapper"> <!-- Ikonholder -->
+              <i class="fa-solid fa-people-group fa-2x"></i> <!-- Gruppe-ikon -->
+            </div> <!-- Slutter ikonholder -->
+            <h3 class="h4 mb-2 fw-semibold">Workshops</h3> <!-- Titel -->
+            <p class="text-center mb-0">Praktiske forløb med andre studerende</p> <!-- Tekst -->
           </div>
-          <div class="service-card-back">
-            <h4 class="mb-3 text-primary">Indhold</h4>
-            <ul class="feature-list">
-              <li>Design Thinking</li>
-              <li>Pitch & præsentation</li>
-              <li>Forretningsforståelse</li>
-            </ul>
-            <a href="#workshops" class="btn btn-primary mt-4">
-              Læs mere
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
+
+          <div class="service-card-back"> <!-- Bagside -->
+            <h4 class="mb-3 text-primary">Indhold</h4> <!-- Titel -->
+            <ul class="feature-list"> <!-- Liste -->
+              <li>Design Thinking</li> <!-- Punkt -->
+              <li>Pitch & præsentation</li> <!-- Punkt -->
+              <li>Forretningsforståelse</li> <!-- Punkt -->
+            </ul> <!-- Slutter liste -->
+            <a href="#workshops" class="btn btn-primary mt-4">Læs mere</a> <!-- Link -->
+          </div> <!-- Slutter bagside -->
+        </div> <!-- Slutter inner -->
+      </div> <!-- Slutter card -->
+    </div> <!-- Slutter col -->
 
     <!-- Service 3 -->
-    <div class="col-md-4">
-      <div class="service-card hover-lift">
-        <div class="service-card-inner">
-          <div class="service-card-front">
-            <div class="icon-wrapper">
-              <i class="fa-solid fa-comments fa-2x"></i>
-            </div>
-            <h3 class="h4 mb-2 fw-semibold">1:1 sparring</h3>
-            <p class="text-center mb-0">
-              Personlig sparring i trygge rammer
-            </p>
-          </div>
-          <div class="service-card-back">
-            <h4 class="mb-3 text-primary">Samtaler</h4>
-            <ul class="feature-list">
-              <li>Online møder</li>
-              <li>Feedback på idé</li>
-              <li>Individuel vejledning</li>
-            </ul>
-            <a href="#sparring" class="btn btn-primary mt-4">
-              Læs mere
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
+    <div class="col-md-4"> <!-- Kolonne -->
+      <div class="service-card hover-lift"> <!-- Card -->
+        <div class="service-card-inner"> <!-- Inner -->
+          <div class="service-card-front"> <!-- Forside -->
+            <div class="icon-wrapper"> <!-- Ikonholder -->
+              <i class="fa-solid fa-comments fa-2x"></i> <!-- Chat-ikon -->
+            </div> <!-- Slutter ikonholder -->
+            <h3 class="h4 mb-2 fw-semibold">1:1 sparring</h3> <!-- Titel -->
+            <p class="text-center mb-0">Personlig sparring i trygge rammer</p> <!-- Tekst -->
+          </div> <!-- Slutter forside -->
 
-  </div>
-</div>
+          <div class="service-card-back"> <!-- Bagside -->
+            <h4 class="mb-3 text-primary">Samtaler</h4> <!-- Titel -->
+            <ul class="feature-list"> <!-- Liste -->
+              <li>Online møder</li> <!-- Punkt -->
+              <li>Feedback på idé</li> <!-- Punkt -->
+              <li>Individuel vejledning</li> <!-- Punkt -->
+            </ul> <!-- Slutter liste -->
+            <a href="#sparring" class="btn btn-primary mt-4">Læs mere</a> <!-- Link -->
+          </div> <!-- Slutter bagside -->
+        </div> <!-- Slutter inner -->
+      </div> <!-- Slutter card -->
+    </div> <!-- Slutter col -->
+
+  </div> <!-- Slutter row -->
+</div> <!-- Slutter container -->
 
 
 
+<!-- SEKTION: Idéudvikling -->
+<section id="ideudvikling" class="py-5 mx-2 fade-in"> <!-- Sektion + padding + margin + fade-in -->
+  <div class="container"> <!-- Container -->
 
+    <div class="section-title fw-bold text-primary text-center"> <!-- Titel wrapper -->
+      <h3>Idéudvikling</h3> <!-- Overskrift -->
+    </div> <!-- Slutter titel wrapper -->
 
+    <div class="row"> <!-- Row -->
+      <div class="col-12 col-md-10 col-lg-8 mx-auto"> <!-- Centeret tekstbredde -->
 
+        <p>
+          Idéudvikling hos Connected Starters handler om at give dine tanker form og retning –
+          uanset om din idé er helt ny eller allerede har taget de første skridt.
+          Du behøver ikke have en færdig plan for at deltage. Fokus er på at undersøge muligheder,
+          afklare potentiale og arbejde struktureret med dine tanker.
+        </p>
 
-<section id="ideudvikling" class="py-5 mx-2 fade-in">
-  <div class="container">
+        <p>
+          Gennem sparring og øvelser hjælper vi dig med at identificere problemstillinger,
+          målgrupper og værdiskabelse. Du lærer at stille de rigtige spørgsmål og se din idé
+          fra flere perspektiver, så du kan træffe bedre beslutninger om, hvordan du vil arbejde videre.
+        </p>
 
-    <div class="section-title fw-bold text-primary text-center">
-      <h3>Idéudvikling</h3>
-    </div>
-
-    <div class="row">
-      <div class="col-12 col-md-10 col-lg-8 mx-auto">
-
-    <p>
-      Idéudvikling hos Connected Starters handler om at give dine tanker form og retning –
-      uanset om din idé er helt ny eller allerede har taget de første skridt.
-      Du behøver ikke have en færdig plan for at deltage. Fokus er på at undersøge muligheder,
-      afklare potentiale og arbejde struktureret med dine tanker.
-    </p>
-
-    <p>
-      Gennem sparring og øvelser hjælper vi dig med at identificere problemstillinger,
-      målgrupper og værdiskabelse. Du lærer at stille de rigtige spørgsmål og se din idé
-      fra flere perspektiver, så du kan træffe bedre beslutninger om, hvordan du vil arbejde videre.
-    </p>
-
-    <p>
-      Idéudvikling foregår i et trygt miljø, hvor der er plads til usikkerhed og refleksion.
-      Det vigtigste er ikke at have det rigtige svar – men at turde udforske dine muligheder
-      og tage de første skridt i dit eget tempo.
-    </p>
+        <p>
+          Idéudvikling foregår i et trygt miljø, hvor der er plads til usikkerhed og refleksion.
+          Det vigtigste er ikke at have det rigtige svar – men at turde udforske dine muligheder
+          og tage de første skridt i dit eget tempo.
+        </p>
 
       </div>
     </div>
 
   </div>
 </section>
+
 
 <section id="workshops" class="py-5 bg-light mx-2 fade-in">
   <div class="container">
@@ -220,31 +211,32 @@
     <div class="row">
       <div class="col-12 col-md-10 col-lg-8 mx-auto">
 
+        <p>
+          Connected Starters tilbyder workshops og forløb, der giver dig konkrete værktøjer
+          til at arbejde med idéudvikling, pitch, samarbejde og forretningsforståelse.
+          Workshops er praksisnære og designet, så du kan omsætte teori til handling.
+        </p>
 
-    <p>
-      Connected Starters tilbyder workshops og forløb, der giver dig konkrete værktøjer
-      til at arbejde med idéudvikling, pitch, samarbejde og forretningsforståelse.
-      Workshops er praksisnære og designet, så du kan omsætte teori til handling.
-    </p>
+        <p>
+          Du deltager sammen med andre studerende fra forskellige uddannelser,
+          hvilket giver mulighed for nye perspektiver og tværfaglig sparring.
+          Samtidig lægges der vægt på et trygt læringsmiljø, hvor alle bidrag er velkomne,
+          og hvor det er okay at være i tvivl og stille spørgsmål.
+        </p>
 
-    <p>
-      Du deltager sammen med andre studerende fra forskellige uddannelser,
-      hvilket giver mulighed for nye perspektiver og tværfaglig sparring.
-      Samtidig lægges der vægt på et trygt læringsmiljø, hvor alle bidrag er velkomne,
-      og hvor det er okay at være i tvivl og stille spørgsmål.
-    </p>
+        <p>
+          Workshops kan bruges både som inspiration og som næste skridt i udviklingen
+          af din idé. Du vælger selv, hvilke forløb der passer til dit niveau og dine behov,
+          og der er ingen forventning om, at du deltager i alt.
+        </p>
 
-    <p>
-      Workshops kan bruges både som inspiration og som næste skridt i udviklingen
-      af din idé. Du vælger selv, hvilke forløb der passer til dit niveau og dine behov,
-      og der er ingen forventning om, at du deltager i alt.
-    </p>
       </div>
     </div>
 
   </div>
 </section>
 
+<!-- SEKTION: Sparring -->
 <section id="sparring" class="py-5 mx-2 fade-in">
   <div class="container">
 
@@ -254,43 +246,35 @@
 
     <div class="row">
       <div class="col-12 col-md-10 col-lg-8 mx-auto">
+        <p>
+          1:1 sparring er for dig, der foretrækker personlig dialog og et mere roligt format.
+          Samtalen foregår typisk online og giver dig mulighed for at tale åbent om dine idéer,
+          tanker og udfordringer – uden at skulle deltage i workshops eller større fællesskaber.
+        </p>
 
-    <p>
-      1:1 sparring er for dig, der foretrækker personlig dialog og et mere roligt format.
-      Samtalen foregår typisk online og giver dig mulighed for at tale åbent om dine idéer,
-      tanker og udfordringer – uden at skulle deltage i workshops eller større fællesskaber.
-    </p>
+        <p>
+          I samtalen kan du få feedback på din idé, hjælp til at strukturere dine tanker
+          og sparring på næste skridt. Fokus er på dig og dine behov, og samtalen tilpasses
+          dit niveau og tempo.
+        </p>
 
-    <p>
-      I samtalen kan du få feedback på din idé, hjælp til at strukturere dine tanker
-      og sparring på næste skridt. Fokus er på dig og dine behov, og samtalen tilpasses
-      dit niveau og tempo.
-    </p>
+        <p>
+          1:1 sparring er særligt velegnet til studerende, der ønsker en tryg indgang
+          til iværksætteri, eller som har brug for afklaring, før de deltager i fælles aktiviteter.
+          Det er en fleksibel måde at komme i gang – på dine egne præmisser.
+        </p>
 
-    <p>
-      1:1 sparring er særligt velegnet til studerende, der ønsker en tryg indgang
-      til iværksætteri, eller som har brug for afklaring, før de deltager i fælles aktiviteter.
-      Det er en fleksibel måde at komme i gang – på dine egne præmisser.
-    </p>
       </div>
     </div>
 
   </div>
 </section>
 
-
-
 <br>
 <br>
 <br>
 
-
-
-
-
-
-
-<!-- LOKATIONER: Viser de 3 campusmiljøer -->
+<!-- LOKATIONER: Viser de 3 campusmiljøer --> <!-- Kommentar -->
 <section class="py-5 bg-light text-primary fade-in">
   <div class="container text-center">
     <h2 class="fw-bold mb-4">Vores lokationer</h2>
@@ -322,23 +306,18 @@
 
     </div>
   </div>
+
   <br>
   <br>
   <br>
-
-</section>
-
-
-
-
-
-
-
+</section> <!-- Slutter lokationer -->
 
 <!-- FOOTER: 3 kolonner med info, genveje og sociale medier -->
 <footer class="mt-auto">
   <div class="container">
+
     <div class="row justify-content-between">
+
       <!-- Om os sektion -->
       <div class="col-md-4 mb-3">
         <h5>Om os</h5>
@@ -359,62 +338,64 @@
       <div class="col-md-3 mb-3">
         <h5>Følg os</h5>
 
-        <ul class="list-inline social-icons">
-          <li class="list-inline-item">
+        <ul class="list-inline social-icons"> <!-- Ikonliste -->
+          <li class="list-inline-item"> <!-- Facebook -->
             <a href="https://www.facebook.com/" class="facebook text-white">
               <i class="bi bi-facebook"></i>
             </a>
           </li>
 
-          <li class="list-inline-item">
-            <a href="https://www.instagram.com/" class="instagram text-white">
-              <i class="bi bi-instagram"></i>
+          <li class="list-inline-item"> <!-- Instagram -->
+            <a href="https://www.instagram.com/" class="instagram text-white"> <!-- Link -->
+              <i class="bi bi-instagram"></i> <!-- Ikon -->
             </a>
           </li>
         </ul>
 
-        <!-- Logo SKAL ligge udenfor ul -->
-        <img src="images/Zealandlogo.svg" alt="Zealand logo" class="logo w-50 mt-4">
+        <!-- Logo SKAL ligge udenfor ul --> <!-- Kommentar -->
+        <img src="images/Zealandlogo.svg" alt="Zealand logo" class="logo w-50 mt-4"> <!-- Logo -->
       </div>
-    </div>
+
+    </div> <!-- Slutter row -->
 
     <hr class="mb-4">
 
-    <!-- Copyright nederst -->
+    <!-- Copyright nederst --> <!-- Kommentar -->
     <div class="row">
       <div class="col-md-12 text-center">
-        <p>&copy; 2025 Connected Starters. All rights reserved.</p>
+        <p>&copy; 2026 Connected Starters. All rights reserved.</p>
       </div>
     </div>
+
   </div>
 </footer>
 
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script> <!-- Bootstrap JS -->
 
 <script>
-    const fadeElements = document.querySelectorAll('.fade-in');
+    const fadeElements = document.querySelectorAll('.fade-in'); <!-- Finder alle fade-in elementer -->
 
-    // 👉 Fade første element ind automatisk (fx hero)
-    if (fadeElements.length > 0) {
-        setTimeout(() => {
-            fadeElements[0].classList.add('show');
-        }, 500);
+    // 👉 Fade første element ind automatisk (fx hero) <!-- Kommentar -->
+    if (fadeElements.length > 0) { <!-- Hvis der findes elementer -->
+        setTimeout(() => { <!-- Vent lidt -->
+            fadeElements[0].classList.add('show'); <!-- Vis første element -->
+        }, 500); <!-- Vent 500ms -->
     }
 
-    // 👉 Observer til resten (scroll fade-in)
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('show');
-                observer.unobserve(entry.target); // fade-in kun én gang
+    // 👉 Observer til resten (scroll fade-in) <!-- Kommentar -->
+    const observer = new IntersectionObserver((entries) => { <!-- Observer -->
+        entries.forEach(entry => { <!-- Loop -->
+            if (entry.isIntersecting) { <!-- Hvis element er synligt -->
+                entry.target.classList.add('show'); <!-- Tilføj show -->
+                observer.unobserve(entry.target); <!-- Gør det kun én gang -->
             }
         });
     }, {
-        threshold: 0.2
+        threshold: 0.2 <!-- 20% synlig før den aktiverer -->
     });
 
-    fadeElements.forEach(el => observer.observe(el));
+    fadeElements.forEach(el => observer.observe(el)); <!-- Observer alle fade-in -->
 </script>
+
 </body>
 </html>

@@ -1,153 +1,188 @@
-// =======================================
-// BOOTSTRAP & VARIABLE SETUP
-// Import functions and override Bootstrap defaults
-// =======================================
-// 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
-@import "../node_modules/bootstrap/scss/functions";
 
-// --- Global color variables for Branding ---
-// Primary = blå, Secondary = gul
-$link-decoration: none;
+// 1. Include functions first (so you can manipulate colors, SVGs, calc, etc) // Kommentar: bootstrap anbefaler at functions kommer først
+@import "../node_modules/bootstrap/scss/functions"; // Kommentar: importerer bootstrap SCSS functions
+
+// --- Global color variables for Branding --- // Kommentar: dine brandfarver
+// Primary = blå, Secondary = gul // Kommentar: farverne betyder
+$link-decoration: none; // Kommentar: fjerner underline på links som standard (bootstrap variabel)
 $primary: #20247b;
 $secondary: #FFE54A;
 
-// 3. Include remainder of required Bootstrap stylesheets
+// 3. Include remainder of required Bootstrap stylesheets // Kommentar: nu importerer du bootstrap variabler
 @import "../node_modules/bootstrap/scss/variables";
 @import "../node_modules/bootstrap/scss/variables-dark";
 
-// --- Custom color map example (used to extend Bootstrap color utilities) ---
+// --- Custom color map example (used to extend Bootstrap color utilities) --- // Kommentar: du tilføjer en ekstra farve til bootstrap utilities
 $custom-colors: (
-	"farve": $cyan-400,
+        "farve": $cyan-400,
 );
 
-$theme-colors: map-merge($theme-colors, $custom-colors);
+$theme-colors: map-merge($theme-colors, $custom-colors); // Kommentar: fletter dine farver ind i bootstraps $theme-colors
 
-// Load the compiled Bootstrap components (mixins, grids, utilities)
+// Load the compiled Bootstrap components (mixins, grids, utilities) // Kommentar: loader bootstrap komponenter samlet
 @import "bootstrapComponents";
 
-// 5. Du kan lave styling her...
+// 5. Du kan lave styling her... // Kommentar: her starter din egen styling
 
 
- // =======================================
- // GLOBAL FONT SETTINGS
- // =======================================
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
 
-// Standard font for hele websitet
-body {
+
+
+
+
+
+
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"); // Kommentar: henter Google Font (Poppins) i flere vægte
+
+
+body { // Kommentar: body selector (gælder hele siden)
   font-family: "Poppins", sans-serif !important;
 }
 
 
 body{margin-top:20px;}
 
+
 // =======================================
-// NAVBAR HOVER UNDERLINE EFFECT
+// NAVBAR HOVER UNDERLINE EFFECT // Kommentar: gul streg under links når du hover
 // =======================================
-.navbar-nav .nav-link {
-  position: relative;
+
+
+.navbar-nav .nav-link { // Kommentar: vælger alle nav-links i bootstrap navbar
+  position: relative; // Kommentar: gør det muligt at placere ::after relativt til linket
   overflow: hidden;
 }
 
-.navbar-nav .nav-link::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0;
-  height: 2px;
-  background-color: #FFE54A;
-  transition: width 0.3s ease;
+.navbar-nav .nav-link::after { // Kommentar: pseudo-element der bliver til en underline
+  content: ""; // Kommentar: nødvendigt for at pseudo-elementet vises
+  position: absolute; // Kommentar: placerer underline inde i linket
+  bottom: 0; // Kommentar: lægger den i bunden af linket
+  left: 0; // Kommentar: starter helt til venstre
+  width: 0; // Kommentar: starter usynlig (0 bredde)
+  height: 2px; // Kommentar: underline tykkelse
+  background-color: #FFE54A; // Kommentar: gul underline farve
+  transition: width 0.3s ease; // Kommentar: animation når width ændrer sig
 }
 
-.navbar-nav .nav-link:hover::after {
-  width: 100%;
+.navbar-nav .nav-link:hover::after { // Kommentar: når man hover linket
+  width: 100%; // Kommentar: underline udvider sig til fuld bredde
 }
+
+
+
+
 
 
 // =======================================
 // CTA BUTTON HOVER ANIMATION (Hero)
 // =======================================
-.cta-btn {
-  transition: all 0.3s ease;
-}
 
-.cta-btn:hover {
-  background-color: #FFE54A !important; /* din gule farve */
-  color: black !important;
-  transform: translateY(-3px) scale(1.03);
+
+.cta-btn { // Kommentar: klassen på din hero CTA
+  transition: all 0.3s ease; // Kommentar: gør hover glidende (farve, transform, shadow)
+} // Kommentar: slutter regel
+
+.cta-btn:hover { // Kommentar: hover på hero CTA
+  background-color: #FFE54A !important;
+  color: black !important; // Kommentar: gør teksten sort på hover
+  transform: translateY(-3px) scale(1.03); // Kommentar: løfter knappen og gør den lidt større
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
+
+
+
+
+
+
+
 
 /* =======================================
    FEATURE BOXES (Ikon + tekst bokse)
    =======================================
-   Effekt: hover = blå baggrund, hvid tekst
-*/
+
+   Effekt: hover = blå baggrund, hvid tekst // Kommentar: forklarer hover-adfærd
+*/ // Kommentar: slut på kommentar-blok
+
+
 .feature-box-1 {
   padding: 32px;
   box-shadow: 0 0 30px rgba(31, 45, 61, 0.125);
-  margin: 15px 0;
+  margin: 15px 0; // Kommentar: afstand over/under
   position: relative;
-  z-index: 1;
+  z-index: 1; // Kommentar: sørger for at kortet ligger over baggrunden
   border-radius: 10px;
   overflow: hidden;
-  transition: ease all 0.35s;
-  top: 0;
+  transition: ease all 0.35s; // Kommentar: glidende animation på hover
+  top: 0; // Kommentar: udgangspunkt (bruges når hover løfter kortet)
 }
+
 .feature-box-1 * {
-  transition: ease all 0.35s;
+  transition: ease all 0.35s; // Kommentar: gør tekst/ikon glidende når farver skifter
 }
-.feature-box-1 .icon {
+
+.feature-box-1 .icon { // Kommentar: cirklen med ikon
   width: 70px;
   height: 70px;
   line-height: 70px;
   background: #FFE54A;
-  color: #20247b;
+  color: #20247b; // Kommentar: blå ikonfarve
   text-align: center;
   border-radius: 50%;
   margin-bottom: 22px;
   font-size: 27px;
 }
-.feature-box-1 .icon i {
+
+.feature-box-1 .icon i { // Kommentar: selve <i> ikonet
   line-height: 70px;
 }
+
 .feature-box-1 h4 {
   color: #20247b;
-  font-weight: 600;
+  font-weight: 600; // Kommentar: semi-bold
 }
+
 .feature-box-1 p {
-  margin: 0;
+  margin: 0; // Kommentar: fjerner default margin så spacing er mere kontrolleret
 }
-.feature-box-1:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: auto;
-  right: 0;
+
+.feature-box-1:after { // Kommentar: overlay baggrund (til hover)
+  content: ""; // Kommentar: kræves for pseudo-element
+  position: absolute; // Kommentar: lægger overlay inde i kortet
+  top: 0; // Kommentar: starter i toppen
+  bottom: 0; // Kommentar: går til bunden
+  left: auto; // Kommentar: starter ikke fra venstre (bruges til animation)
+  right: 0; // Kommentar: ligger i højre side
   border-radius: 10px;
-  width: 0;
+  width: 0; // Kommentar: starter usynlig (0 bredde)
   background: #20247b;
-  z-index: -1;
+  z-index: -1; // Kommentar: ligger bag indholdet (men inde i kortet)
   transition: ease all 0.35s;
 }
-.feature-box-1:hover {
-  top: -5px;
+
+.feature-box-1:hover { // Kommentar: hover på kortet
+  top: -5px; // Kommentar: løfter kortet op
 }
-.feature-box-1:hover h4 {
+
+.feature-box-1:hover h4 { // Kommentar: hover gør overskrift hvid
   color: #ffffff;
 }
-.feature-box-1:hover p {
-  color: rgba(255, 255, 255, 0.8);
+
+.feature-box-1:hover p { // Kommentar: hover gør brødtekst lys/hvid
+  color: rgba(255, 255, 255, 0.8); // Kommentar: lidt gennemsigtig hvid
 }
-.feature-box-1:hover:after {
+
+.feature-box-1:hover:after { // Kommentar: hover gør overlay synlig
   width: 100%;
   height: 100%;
   border-radius: 10px;
-  left: 0;
-  right: auto;
+  left: 0; // Kommentar: starter fra venstre på hover
+  right: auto; // Kommentar: stopper med at være låst til højre
 }
+
+
+
+
 
 
 
@@ -156,34 +191,33 @@ body{margin-top:20px;}
 // =======================================
 // SECTION GENERAL SPACING & TITLES
 // =======================================
-.section {
-  padding: 100px 0;
-  position: relative;
-}
-.section-title {
-  padding-bottom: 45px;
-}
-.section-title h2 {
 
+
+.section { // Kommentar: alle sektioner med klassen .section
+  padding: 100px 0; // Kommentar: stor top/bottom padding
+  position: relative; // Kommentar: giver mulighed for absolute elements inde i
+}
+.section-title { // Kommentar: wrapper til overskrifter
+  padding-bottom: 45px; // Kommentar: luft under titelblokken
+}
+
+.section-title h2 { // Kommentar: styling af h2 titler inde i section-title
   font-weight: 700;
   color: #20247b;
   font-size: 45px;
   margin: 0 0 15px;
-  border-left: 5px solid #FFE54A;
+  border-left: 5px solid #FFE54A; // Kommentar: gul streg til venstre
   padding-left: 15px;
 }
-
-
-
 .section-title h1 {
-
   font-weight: 700;
   color: #20247b;
   font-size: 45px;
   margin: 0 0 15px;
-  border-left: 5px solid #FFE54A;
+  border-left: 5px solid #FFE54A; // Kommentar: gul streg til venstre
   padding-left: 15px;
 }
+
 
 
 
@@ -193,120 +227,130 @@ body{margin-top:20px;}
 // =======================================
 // STEP CARDS (Sådan kommer du i gang)
 // =======================================
+
 .step-card {
   background-color: #ffffff;
   padding: 24px 20px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-  transition: transform .2s ease, box-shadow .2s ease;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05); // Kommentar: blød skygge
+  transition: transform .2s ease, box-shadow .2s ease; // Kommentar: glidende hover
 }
 
 .step-card:hover {
-  transform: translateY(-4px);
+  transform: translateY(-4px); // Kommentar: løfter kortet
   box-shadow: 0 14px 40px rgba(0,0,0,0.08);
 }
 
-// Runde ikonbokse i step-sektionen
-.step-illustration {
+// Runde ikonbokse i step-sektionen // Kommentar: forklaring
+.step-illustration { // Kommentar: cirkel bag step-ikon/nummer
   width: 70px;
   height: 70px;
   border-radius: 50%;
-  margin: 0 auto;
+  margin: 0 auto; // Kommentar: centrerer horisontalt
   display: flex;
   align-items: center;
   justify-content: center;
-  background: radial-gradient(circle at 30% 30%, #FFF5A5, #FFE54A);
+  background: radial-gradient(circle at 30% 30%, #FFF5A5, #FFE54A); // Kommentar: gul gradient
   box-shadow: 0 8px 18px rgba(0,0,0,0.12);
 }
 
-.step-illustration i {
+.step-illustration i { // Kommentar: ikon inde i cirklen
   font-size: 30px;
-  color: #1B207A; /* din blå */
+  color: #1B207A;
 }
 
 // Sekundær CTA-knap (gul → blå hover)
 .cta-btn-2 {
-  transition: all 0.3s ease;
+  transition: all 0.3s ease; // Kommentar: glidende hover
   background-color: #FFE54A;
   color: #1B207A;
   border: none;
 }
 
-.cta-btn-2:hover {
+.cta-btn-2:hover { // Kommentar: hover på CTA 2
   background-color: #1B207A;
   color: #FFE54A;
-  transform: translateY(-3px) scale(1.03);
-
+  transform: translateY(-3px) scale(1.03); // Kommentar: løfter og zoomer lidt
 }
 
 
 
 
+
+
+
 // =======================================
-// FOOTER STYLING
+// FOOTER STYLING // Kommentar: footer design
 // =======================================
+
+
 footer {
   background-color: #20247b;
   color: #fff;
-  padding: 3rem 0;
+  padding: 3rem 0; // Kommentar: top/bottom padding
 }
 
-// Sociale medier ikoner i footer
+// Sociale medier ikoner i footer // Kommentar: forklaring
 .social-icons a {
   font-size: 1.25rem;
 }
 
 
 
-
 body {
-  padding-top: 70px; /* navbar height */
+  padding-top: 70px; /* navbar height */ // Kommentar: skubber alt ned så fixed navbar ikke overlapper indhold
 }
 
 
-
-.sonya{
+.sonya{ // Kommentar: klasse du bruger på step-sektionen
   margin-bottom: 70px;
 }
 
 
 /* Luft omkring hver workshop */
 .workshop-item {
-margin-bottom: 60px;
+  margin-bottom: 60px;
   margin-top: 60px;
 }
 
 
-
-.dark-image {
-  filter: brightness(70%);
+.dark-image { // Kommentar: bruges på div omkring billedet (tekst.webp)
+  filter: brightness(70%); // Kommentar: gør billedet mørkere så tekst/kontrast føles roligere
 }
 
-.service-card {
-  perspective: 1000px;
+
+
+
+
+
+
+
+
+.service-card { // Kommentar: wrapper til flip-card (service kort)
+  perspective: 1000px; // Kommentar: giver 3D dybde (flip ser mere realistisk ud)
   height: 400px;
 }
 
-.service-card-inner {
-  position: relative;
+.service-card-inner { // Kommentar: den indre del der roterer
+  position: relative; // Kommentar: gør front/back absolute muligt inde i
   width: 100%;
   height: 100%;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
-  cursor: pointer;
+  transition: transform 0.8s; // Kommentar: flip animationens hastighed
+  transform-style: preserve-3d; // Kommentar: sørger for at børn bevarer 3D
+  cursor: pointer; // Kommentar: musen bliver hånd (klik/hover føles interaktiv)
 }
 
-.service-card:hover .service-card-inner {
-  transform: rotateY(180deg);
+.service-card:hover .service-card-inner { // Kommentar: når du hover hele kortet
+  transform: rotateY(180deg); // Kommentar: roterer indholdet 180 grader (flip)
 }
 
 .service-card-front,
 .service-card-back {
-  position: absolute;
+  position: absolute; // Kommentar: ligger oven på hinanden
   width: 100%;
   height: 100%;
-  backface-visibility: hidden;
+  backface-visibility: hidden; // Kommentar: skjuler bagsiden når den vender væk
   border-radius: 15px;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1); // Kommentar: skygge
   overflow: hidden;
 }
 
@@ -323,32 +367,22 @@ margin-bottom: 60px;
 .service-card-back {
   background: white;
   color: #1f2937;
-  transform: rotateY(180deg);
+  transform: rotateY(180deg); // Kommentar: roterer bagsiden så den vender rigtigt efter flip
   padding: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.icon-wrapper {
-  width: 80px;
-  height: 80px;
-  background: rgba(255,255,255,0.2);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 1.5rem;
-}
 
-.feature-list {
-  list-style: none;
+.feature-list { // Kommentar: liste på bagsiden af flip kort
+  list-style: none; // Kommentar: fjerner bullets
   padding: 0;
   margin: 0;
 }
 
 .feature-list li {
-  padding: 0.5rem 0;
+  padding: 0.5rem 0; /
   border-bottom: 1px solid #e5e7eb;
 }
 
@@ -357,46 +391,37 @@ margin-bottom: 60px;
 }
 
 .hover-lift {
-  transition: transform 0.2s;
+  transition: transform 0.2s; // Kommentar: glidende animation
 }
 
 .hover-lift:hover {
-  transform: translateY(-5px);
+  transform: translateY(-5px); // Kommentar: løfter 5px op
 }
 
 
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: smooth; // Kommentar: gør anchor-links (href="#...") glidende
 }
 
-section[id] {
-  scroll-margin-top: 90px; /* svarer til højden på din navbar */
+section[id] { // Kommentar: alle section der har et id (bruges til anchor scroll)
+  scroll-margin-top: 90px; /* svarer til højden på din navbar */ // Kommentar: stopper scroll før navbar dækker overskriften
 }
 
 /* Service icons – matcher feature-box-1 */
 .icon-wrapper {
   width: 70px;
   height: 70px;
-  background: #ffffff;      /* gul baggrund */
-  color: #20247b;           /* primary blå ikon */
+  background: #ffffff;
+  color: #20247b;
   border-radius: 50%;
   display: flex;
   align-items: center;
-  justify-content: center;
-  margin: 0 auto 22px;      /* centrer + luft under */
+  justify-content: center; /
+  margin: 0 auto 22px;      /* centrer + luft under */ // Kommentar: centrerer og giver bund margin
   font-size: 27px;
 }
 
-/* Outline pill button – navbar */
-.btn-outline-primary-pill {
-  color: #20247b;               /* primary */
-  border: 2px solid #20247b;
-  background-color: transparent;
-  border-radius: 999px;
-  padding: 8px 24px;
-  font-weight: 600;
-  transition: all 0.25s ease;
-}
+
 
 /* Navbar CTA – samme størrelse som nav-links */
 .btn-outline-primary-pill {
@@ -405,41 +430,56 @@ section[id] {
   background-color: transparent;
   border-radius: 999px;
 
-  /* 🔽 DET VIGTIGE */
-  font-size: 0.9rem;          /* samme som .nav-link */
-  padding: 5px 16px;        /* mindre højde */
-  line-height: 1.6;
+  /* 🔽 DET VIGTIGE */ // Kommentar: markerer det vigtige
+  font-size: 0.9rem;          /* samme som .nav-link */ // Kommentar: matcher nav-link størrelse
+  padding: 5px 16px;        /* mindre højde */ // Kommentar: gør knappen lavere end 8px 24px
+  line-height: 1.6; // Kommentar: justerer linjehøjde så teksten ser centreret ud
 
-  transition: all 0.25s ease;
+  transition: all 0.25s ease; // Kommentar: hover animation
 }
 
 .btn-outline-primary-pill:hover {
-  background-color: #20247b;
-  color: #fff;
+  background-color: #20247b; // Kommentar: bliver blå
+  color: #fff; // Kommentar: tekst bliver hvid
 }
 
 
 
 .fade-in {
   opacity: 0;
-  transform: translateY(24px);
-  transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+  transform: translateY(24px); // Kommentar: rykket lidt ned (så den kan “slide op”)
+  transition: opacity 0.7s ease-out, transform 0.7s ease-out; // Kommentar: glidende animation
 }
 
-.fade-in.show {
-  opacity: 1;
-  transform: translateY(0);
+.fade-in.show { // Kommentar: når JS tilføjer .show bliver elementet synligt
+  opacity: 1; // Kommentar: synlig
+  transform: translateY(0); // Kommentar: tilbage til normal position
 }
 
-.contact-info p {
-  overflow-wrap: break-word;
+
+
+
+
+
+.contact-info p { // Kommentar: styling til p i kontakt-info (kontakt siden)
+  overflow-wrap: break-word; // Kommentar: lange links/ord må brydes til ny linje
 }
+
 html, body {
-  overflow-x: hidden;
+  overflow-x: hidden; // Kommentar: forhindrer horisontal scroll (hvis noget stikker ud)
 }
 
 .footer-logo {
-  max-width: 120px;   /* justér størrelsen */
-  margin-top: 20px;   /* luft foroven */
-  display: block;     /* så margin-top virker korrekt */
+  max-width: 120px;
+  margin-top: 20px;
+  display: block;     /* så margin-top virker korrekt */ // Kommentar: gør den block så margin virker stabilt
+}
+
+.mb-6 {
+  margin-bottom: 7rem;
+}
+
+.py-6 {
+  padding-bottom: 7rem;
+  padding-top: 7rem;
 }
